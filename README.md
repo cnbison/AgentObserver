@@ -30,6 +30,11 @@ AgentObserver/
 │   ├── survey26_brief.md        ← 赛题简报（8 章）
 │   ├── survey26_start.md        ← 新手上路（6 步）
 │   └── survey26_rules.md        ← 比赛规则与评分（9 节）
+├── marketing/                   ← 市场推广（4 份运营文档）
+│   ├── plan.md                  ← 推广方案
+│   ├── copy-bank.md             ← 文案库
+│   ├── video-scripts.md         ← 视频脚本
+│   └── production-workflow.md   ← 制作流程 SOP
 └── assets/
     └── agent-observer/          ← GOSIM Agent Observer 公开素材
         ├── gosim-logo.svg
@@ -73,3 +78,26 @@ AgentObserver/
 - 跨文件链接使用相对路径（如 `[赛题简报](survey26_brief.md)`）。
 - 资源路径统一为 `../assets/agent-observer/<filename>`（不在引用文档里写绝对 URL，避免仓库迁移失效）。
 - 新增素材请放入 `assets/agent-observer/` 并在对应文档中引用。
+
+---
+
+## 📣 市场推广
+
+> 配套 4 份运营文档（≈ 1500 行 Markdown，可直接当工作手册）：
+
+| 文档 | 内容 |
+|---|---|
+| [marketing/plan.md](marketing/plan.md) | **总体方案** —— 推广目标 / KPI / 受众画像 / 内容矩阵（30 选题）/ 内容日历 / 账号矩阵 / 视频大纲 / 风险预案 / 团队分工 / 预算 |
+| [marketing/copy-bank.md](marketing/copy-bank.md) | **文案库** —— 30 条选题 × 多平台版本（公众号 / 知乎 / Medium / 微博 / X / 小红书 / 抖音）+ 发布日历 + 通用 CTA + 标签词库 |
+| [marketing/video-scripts.md](marketing/video-scripts.md) | **视频脚本** —— 4 类片（概念片 / 教程片 / 深度片 / 颁奖片）+ 直播脚本 + 字幕与配乐规范 + Checklist |
+| [marketing/production-workflow.md](marketing/production-workflow.md) | **制作流程 SOP** —— 7 阶段流水线 + 视觉规范 + 工具栈矩阵 + 紧急预案 + 起手组合（最小成本 < ¥200/月） |
+
+### 一图流
+
+```
+marketing/
+├── plan.md                  ← 推广方案（目标 / 选题 / 日历 / 团队）
+├── copy-bank.md             ← 30 选题 × 多平台文案
+├── video-scripts.md         ← 4 类视频 + 直播脚本
+└── production-workflow.md   ← 7 阶段 SOP + 工具栈
+```
