@@ -156,6 +156,19 @@ Co-Authored-By: Claude <noreply@anthropic.com>
 
 ## 7. 近期变更
 
+### 2026-09-17 · 新增 GOSIM 推广 PDF 与官方 starter kit 源码
+
+- 新增 `.gitignore`：排除 `.DS_Store`、`run_output/`、`demo_week_output/`、`**/scratch/`、`__pycache__/`、IDE 配置等
+- 新增 `marketing/gosim_survey_agent_hackathon_intro.pdf`（英文 2 MB）与 `gosim_survey_agent_hackathon_intro_cn.pdf`（中文 10.8 MB）
+- 新增 `agent-observer-starter-kit/` 整个目录：BH3GEI/agent-observer 官方入门包源码
+  - `agent/`：参赛智能体实现（`my_strategy.py` / `minimal_agent.py` / `decision_graph.py` / `state.py` / `protocol.py` / `model_factory.py` / `reference_strategy.py` 等）
+  - `challenge/`：评分器 / 工作流 / 模拟器 / 复盘模板
+  - `scenarios/dev-reference/`（180 夜）+ `scenarios/demo-week/`（7 夜）公开场景
+  - 启动脚本 `run_baseline.command/.bat/.sh` + `run_demo_week.*`
+  - 文档：`QUICKSTART.md` + `QUICKSTART_ZH.md` + `README.md` + `SKILL.md`
+
+**Commit**: d466db5
+
 ### 2026-09-17 · 新增 CLAUDE.md 会话指南
 
 - 新建 `CLAUDE.md`，作为本仓库的 Claude Code 会话指南
