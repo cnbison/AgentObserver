@@ -163,4 +163,4 @@ Co-Authored-By: Claude <noreply@anthropic.com>
 - §6 定义"每次任务后追加变更记录并推送"的维护规则
 - §7 作为滚动 changelog，后续任务在此追加
 
-**Commit**: 见 git log 最新一条
+**Commit**: 3af61a3
