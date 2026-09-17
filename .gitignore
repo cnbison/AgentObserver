@@ -1,0 +1,25 @@
+# macOS
+.DS_Store
+
+# Starter kit：跑出来的回放 / 日志 / 报告（可由 run_baseline 重新生成）
+agent-observer-starter-kit/run_output/
+agent-observer-starter-kit/demo_week_output/
+agent-observer-starter-kit/**/scratch/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# IDE / 编辑器
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# 临时文件
+*.tmp
+*.log
