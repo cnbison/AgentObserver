@@ -24,6 +24,7 @@
 ```
 AgentObserver/
 ├── README.md                    ← 本文件（入口与导航）
+├── CLAUDE.md                    ← Claude Code 会话指南（含维护规则 + 近期变更）
 ├── survey26.md                  ← 软链 → references/survey26.md
 ├── references/
 │   ├── survey26.md              ← 总览
