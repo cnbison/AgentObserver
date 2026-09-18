@@ -173,6 +173,16 @@ Co-Authored-By: Claude <noreply@anthropic.com>
 
 ## 7. 近期变更
 
+### 2026-09-18 · 删除 references/ 下两份兄弟参考文 HTML（已转 md）
+
+- 删除 `references/GOSIM Shenzhen 2026 智能体软件工厂...html`（3.6 MB）
+- 删除 `references/GOSIM Spotlight Shenzhen 2026 全球 AI 项目...html`（3.8 MB）
+- 原因：两份 HTML 已被对应 md 替代（内容无新增）
+  - `marketing/gosim_factory_hackathon_intro.md`（11.8 KB / 6 节 / 4 配图）
+  - `marketing/gosim_spotlight_intro.md`（16.4 KB / 5 节 / 6 配图）
+- 全仓扫描引用：仅 CLAUDE.md §7 历史 changelog 提及 html 文件名，按 §6.3 "不删历史记录"保留不动；正文（README / 兄弟赛事 md）**无任何对 references/ html 的引用**——两份兄弟赛事 md 内引用的都是 create.gosim.org / spotlight.gosim.org 外链，不受影响
+- 历史 changelog（L225-228 / mhtml→html 那条）保留不动作为事实记录
+
 ### 2026-09-18 · 将 Spotlight 兄弟赛事 HTML 转 md 并优化显示
 
 - 新增 `marketing/gosim_spotlight_intro.md`（16440 字节 / 5 节 + 附录 A–B）
