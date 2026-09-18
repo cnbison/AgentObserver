@@ -4,8 +4,6 @@
 
 ---
 
-![图：GOSIM Agent Observer 黑客松主视觉——夜色中的观测台穹顶](../assets/agent-observer/cosmos-observatory-hero-BV_aYwWD.jpg)
-
 ![观测智能体把天气、天区与巡天进度权衡成一份观测计划](../assets/agent-observer/survey-agent-strategy-XnSuOIcZ.jpg)
 
 2026 年 10 月 16–17 日，**GOSIM Shenzhen 2026** 将在中国深圳启幕。作为 GOSIM 全球开源创新汇的第 7 站，这场以开源 AI 为核心的大会将汇聚 **150+ 全球讲师与 2000+ 一线开发者**，围绕 Agentic AI、开源模型与基础设施、开源机器人等前沿方向展开交流——GOSIM Spotlight 现场路演、黑客松与机器人挑战赛同步上演。
@@ -85,14 +83,9 @@
 
 **20 分钟跑通基线 12,287 分**——注册 → 建队 → 下载入门包 → 改 `choose_action` → 上传 → 看分数。
 
-| 入口 | 链接 |
-|---|---|
-| 🎯 **报名入口** | <https://bh3gei.github.io/agent-observer/register> |
-| 📖 **赛题简报（8 章）** | <https://bh3gei.github.io/agent-observer/brief> |
-| 🚀 **新手上路（20 分钟跑通）** | <https://bh3gei.github.io/agent-observer/start> |
-| 📜 **比赛规则（v1.0）** | <https://bh3gei.github.io/agent-observer/rules> |
-| 📊 **实时排行榜** | <https://bh3gei.github.io/agent-observer/leaderboard> |
-| 🛠️ **Starter Kit 源码** | <https://github.com/BH3GEI/agent-observer-starter-kit> |
+**官方网站及报名入口**：<https://create.gosim.org/survey26/>
+
+
 
 **无需天文学背景，只需 Python 3.12。整个比赛你只需要改一个函数。**
 
@@ -104,13 +97,3 @@
 
 ---
 
-## 附录 · 图片版权与署名
-
-| 配图位置 | 文件 | 授权 / 来源 |
-|---|---|---|
-| 封面 / 文末收尾：观测台主视觉 | `cosmos-observatory-hero-BV_aYwWD.jpg` | GOSIM Agent Observer 公开素材 |
-| §03 巡天控制室 | `cosmos-control-room-DALcRogD.jpg` | GOSIM Agent Observer 公开素材 |
-
----
-
-*本仓库维护者：cnbison · 配套工具：[`tools/md2wechat`](../tools/md2wechat/)（Markdown → 公众号 HTML 转换器）· 完整赛题见 [`references/survey26_brief.md`](../references/survey26_brief.md)*
