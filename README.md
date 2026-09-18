@@ -15,10 +15,13 @@
 | 3 | [references/survey26_start.md](references/survey26_start.md) | **新手上路** —— 6 步 + 卡住了速查表：注册 → 建队 → 下载入门包 → 改 `choose_action` → 上传 → 看分 |
 | 4 | [references/survey26_rules.md](references/survey26_rules.md) | **比赛规则与评分** —— 9 节：资格 / 阶段 / 提交 / 平台运行 / **评分公式 (`challenge-score-v3`)** / 排名 / 奖项 / 准则 / 隐私 |
 | 5 | [agent-observer-starter-kit-ANALYSIS.md](agent-observer-starter-kit-ANALYSIS.md) | **入门包源码深度分析** —— 协议 / 评分 / 仿真 / Agent 流水线 / 策略空间 / 7 条参赛建议（**进阶必读**） |
-| 6 | [articles/agent-observer-promo.md](articles/agent-observer-promo.md) | **Agent Observer 黑客松推广长文** —— 1800 字 / 8 配图 / 对标兄弟赛事版本风格，可直接送 `gzh-design` 排版 |
+| 6 | [articles/agent-observer-promo.md](articles/agent-observer-promo.md) | **Agent Observer 黑客松推广长文（Claude 起草版）** —— 1800 字 / 8 配图 / 对标兄弟赛事版本风格，可直接送 `gzh-design` 排版 |
+| 7 | [articles/agent-observer-promo-01.md](articles/agent-observer-promo-01.md) | **Agent Observer 黑客松推广长文（用户手动修正版）** —— 修正标题与开场白；已排版为红白色系公众号 HTML |
+| 8 | [articles/agent-observer-promo-01_排版_红白色系(red-white).html](articles/agent-observer-promo-01_排版_红白色系(red-white).html) | **红白色系公众号 HTML 成品** —— 干净正文，直接粘贴；209 处 `<span leaf>` 包裹，validate_gzh_html.py 校验 0 ERROR |
 
 > 💡 **推荐阅读顺序**：`survey26.md`（总览）→ `survey26_brief.md`（理解赛题）→ `survey26_start.md`（动手做）→ `survey26_rules.md`（核对细节）。
-> 📰 **对外宣传**：`articles/agent-observer-promo.md` 是已发布的中文公众号长文稿。
+> 📰 **对外宣传**：`articles/agent-observer-promo.md` 与 `articles/agent-observer-promo-01.md` 是已发布的中文公众号长文稿，后者已配红白色系排版 HTML。
+> 📜 **仓库变更历史**：见 [CHANGELOG.md](./CHANGELOG.md)（独立维护）。
 
 ---
 
@@ -27,7 +30,8 @@
 ```
 AgentObserver/
 ├── README.md                    ← 本文件（入口与导航）
-├── CLAUDE.md                    ← Claude Code 会话指南（含维护规则 + 近期变更）
+├── CLAUDE.md                    ← Claude Code 会话指南（含维护规则 + 变更记录指针）
+├── CHANGELOG.md                 ← 仓库变更历史（独立维护，倒序追加）
 ├── survey26.md                  ← 软链 → references/survey26.md
 ├── references/
 │   ├── survey26.md              ← 总览
@@ -39,8 +43,11 @@ AgentObserver/
 │   ├── copy-bank.md             ← 文案库
 │   ├── video-scripts.md         ← 视频脚本
 │   └── production-workflow.md   ← 制作流程 SOP
-├── articles/                   ← 推广文章（已发布稿件）
-│   └── agent-observer-promo.md ← ★ Agent Observer 黑客松推广长文（约 1900 字 / 8 配图）
+├── articles/                    ← 推广文章（已发布稿件）
+│   ├── agent-observer-promo.md                     ← ★ 起草版（约 1900 字 / 8 配图）
+│   ├── agent-observer-promo-01.md                  ← ★ 用户手动修正版
+│   ├── agent-observer-promo-01_排版_红白色系(red-white).html          ← 红白色系公众号 HTML（粘贴用）
+│   └── agent-observer-promo-01_排版_红白色系(red-white)_预览.html    ← 同上 + 复制按钮预览页
 ├── agent-observer-starter-kit-ANALYSIS.md ← ★ starter-kit 源码级深度拆解（11 节）
 └── assets/
     └── agent-observer/          ← GOSIM Agent Observer 公开素材
