@@ -165,7 +165,7 @@ Co-Authored-By: Claude <noreply@anthropic.com>
   - 文首摘要行（图数从「6 张」改为「8 张」）
   - 附录版权表新增 FIG 5.1 与 FIG 8.1 两条记录
 
-**Commit**: <pending>
+**Commit**: 76cb837
 
 ### 2026-09-18 · 新增英文参赛者简报 PDF 的 md 整理版
 
