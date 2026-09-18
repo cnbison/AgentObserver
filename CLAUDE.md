@@ -162,7 +162,7 @@ Co-Authored-By: Claude <noreply@anthropic.com>
   从「英文单语」改为「英文 · 中文」双语格式（与正文保持一致）
 - 中文译名与 TOC 表一致，避免重复定义
 
-**Commit**: <pending>
+**Commit**: 769ee89
 
 ### 2026-09-18 · 删除中文译版 PDF（已被双语 md 替代）
 
