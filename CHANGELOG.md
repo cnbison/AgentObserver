@@ -6,6 +6,17 @@
 
 ---
 
+### 2026-09-18 · 修正红白色系排版 HTML 第一张图（搞混了 promo-01 / promo）
+
+- 修复 `articles/agent-observer-promo-01_排版_红白色系(red-white).html` 第 1 张图错误引用
+  - 错：用了 `cosmos-observatory-hero-BV_aYwWD.jpg` + 图注「夜色中的观测台穹顶」（来自 `agent-observer-promo.md` 封面）
+  - 对：改回 `survey-agent-strategy-XnSuOIcZ.jpg` + 图注「观测智能体把天气、天区与巡天进度权衡成一份观测计划」（promo-01.md L7 原引用）
+- §03 控制室图（`cosmos-control-room-DALcRogD.jpg`）和文末收尾图（`cosmos-observatory-hero-BV_aYwWD.jpg`）原本就正确，**未改动**
+- 重新跑 `validate_gzh_html.py`：ERROR=0 + WARNING=0，209 处 `<span leaf>` 包裹完整
+- 重新生成预览页 `articles/agent-observer-promo-01_排版_红白色系(red-white)_预览.html`（覆盖前版）
+
+**Commit**: 48653cf（已修正）+ 待 push 的 bug fix
+
 ### 2026-09-18 · 把 agent-observer-promo-01.md 排版成红白色系公众号 HTML
 
 - 用 `gzh-design` skill（主题 `theme-red-white`，红白色系）把用户修正版 `articles/agent-observer-promo-01.md` 渲染为公众号合规 HTML
