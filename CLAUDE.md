@@ -156,6 +156,17 @@ Co-Authored-By: Claude <noreply@anthropic.com>
 
 ## 7. 近期变更
 
+### 2026-09-18 · 新增英文参赛者简报 PDF 的 md 整理版
+
+- 新增 `marketing/gosim_survey_agent_hackathon_intro.md`（≈ 380 行 / 16 节 / 6 图）
+  - 文首中文摘要 + 16 节中文标题对照表（方便中文参赛者定位）
+  - 保留英文原文（与官方 PDF 一致）
+  - 6 张配图从 PDF 提取到 `assets/agent-observer/pdf-fig-*.jpg`，按章节语义命名
+  - 3 处 ASCII 图：FIG 5.1 数据流图、FIG 8.1 内容字典、§3 名词表（PDF 中为矢量框图，无独立光栅图）
+  - 附录：6 张图的版权与授权清单（含 NASA Hubble 公共领域、DESI CC BY 4.0）
+
+**Commit**: <pending>
+
 ### 2026-09-17 · 新增 starter-kit 深度分析文档
 
 - 新增 `agent-observer-starter-kit-ANALYSIS.md`（≈ 400 行）：源码级拆解，11 节
