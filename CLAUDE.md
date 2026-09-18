@@ -173,6 +173,29 @@ Co-Authored-By: Claude <noreply@anthropic.com>
 
 ## 7. 近期变更
 
+### 2026-09-18 · 将 Spotlight 兄弟赛事 HTML 转 md 并优化显示
+
+- 新增 `marketing/gosim_spotlight_intro.md`（16440 字节 / 5 节 + 附录 A–B）
+  - 文首中文摘要 + 5 节 TOC
+  - §1 何为 Spotlight（6 大主题论坛 + 千名参会者 + 7 条产品方向 + "品类重构"）
+  - §2 为何参加（4 大支持：20 个项目 + 100 美元原型补助 + 6 项现场支持 GFM 表
+    + 5 类现场指导 GFM 表 + 全球传播）
+  - §3 如何参赛（2 条路径 + 7 项 Agent OS 能力 + 3 个关注问题 + 5 个特征
+    + 8 个推荐方向 + 3 类产品形态）
+  - §4 首轮 9 月 13 日截止（5 阶段流程图 + 5 项核心材料 + 8 道必答题
+    + 3 大评审维度：主观 60% + 客观 40% + 7 项最终评选）
+  - §5 同期赛事与大会入口（Spotlight / Factory / 黑客松 / 讲师 / 早鸟票 4 链接）
+  - 附录 A：兄弟赛事三场表（Spotlight + Factory + Agent Observer 互链）
+  - 附录 B：6 张图版权与署名
+- 新增 `assets/sibling-spotlight/`：6 张图全下载到本地
+  - spotlight-img-01.jpg（78 KB 装饰横幅）
+  - spotlight-img-02.jpg（150 KB 项目提交引导）
+  - spotlight-img-03.jpg（128 KB 5 阶段流程图）
+  - spotlight-img-04.jpg（589 KB 现场活动支持图）
+  - spotlight-img-05.jpg（9 KB 早鸟票引导图）
+  - spotlight-img-06.jpg（2.5 KB 官方二维码）
+- 关键数据校对（17 项全部命中）
+
 ### 2026-09-18 · 将 Factory 兄弟赛事 HTML 转 md 并优化显示
 
 - 新增 `marketing/gosim_factory_hackathon_intro.md`（11828 字节 / 6 节 + 附录 A–D）
