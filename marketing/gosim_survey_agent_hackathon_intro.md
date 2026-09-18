@@ -76,7 +76,7 @@ GOSIM 在 2026 年发起 **Open Agent Observer Challenge**——让参赛者**�
 
 ---
 
-## 1. Survey telescopes and cosmology
+## 1. Survey telescopes and cosmology · 巡天望远镜与宇宙学
 
 A survey telescope maps large areas of the sky in a systematic way. Instead of spending the whole night on a single object, a survey observes thousands of sky fields over many nights and builds statistically powerful samples of galaxies, quasars, stars, and other sources.
 
@@ -100,7 +100,7 @@ A spectroscopic survey adds a third dimension: redshift. With sky position plus 
 
 ---
 
-## 2. Why survey operations are hard
+## 2. Why survey operations are hard · 为什么巡天操作很难
 
 ![FIG 1.2 — DESI's public science motivation: spectra of galaxies and quasars build a three-dimensional map of cosmic structure and expansion history.](../assets/agent-observer/pdf-fig-1-2-desi-redshift.jpg)
 
@@ -127,7 +127,7 @@ A spectroscopic survey adds a third dimension: redshift. With sky position plus 
 
 ---
 
-## 3. What the human leading observer does
+## 3. What the human leading observer does · 人类主值观测员做什么
 
 > 📘 **Note for non-astronomers.** Every term in this section answers one practical question: *how visible and valuable is a given target right now?*
 >
@@ -173,7 +173,7 @@ On a real survey night, the leading observer answers the challenges above throug
 
 ---
 
-## 4. Why Agent Observers matter now
+## 4. Why Agent Observers matter now · 为什么 Agent Observer 现在很重要
 
 The duties above are demanding even for experienced observers: they require judgment under uncertainty, **every 900 seconds, all night long**. Modern AI systems now create a path toward assistants that read the state, call computational tools, reason with physical constraints, propose plans, monitor quality, and explain each choice.
 
@@ -189,7 +189,7 @@ This hackathon offers a focused benchmark: participants design the observer logi
 
 ---
 
-## 5. How the challenge is run
+## 5. How the challenge is run · 比赛如何运行
 
 This document describes the challenge design and the reasoning concept behind it. Each challenge instance starts from a **Survey Mission Card**. The card describes the science goal, footprint size, time budget, telescope site, available programs, target classes, observing constraints, and scoring rule. The Survey Mission Card and the public development data will be released to participants before the hackathon begins.
 
@@ -220,7 +220,7 @@ Evaluation fixes one shared scenario — the overall survey plan, the per-night 
 
 ---
 
-## 6. Planning horizons: long, middle, and short term
+## 6. Planning horizons: long, middle, and short term · 规划的时间尺度
 
 Real survey operations plan on three timescales, and this challenge maps onto them deliberately:
 
@@ -253,7 +253,7 @@ Immediate tactical adjustments based on the middle-term plan, driven by real-tim
 
 ---
 
-## 7. Participant job
+## 7. Participant job · 参赛者任务
 
 The participant job is to submit **a concrete, reproducibly runnable agent project**. The programming language is not restricted, as long as the project implements the observer interface: the simulator repeatedly hands your agent the current situation, and the agent returns next action (like "observe" or "wait").
 
@@ -282,7 +282,7 @@ In the hackathon, we demand **a full trace logging**: the project must save the 
 
 ---
 
-## 8. The four important aspects behind every decision
+## 8. The four important aspects behind every decision · 每个决策背后的四个要素
 
 Every slot, the agent should be provided with information about **four aspects** — weather, forecast, progress, and available tiles. The agent weighs all four together rather than reacting to any one of them alone. The diagram below shows how these inputs are structured.
 
@@ -313,7 +313,7 @@ The agent should handle several recurring situations:
 
 ---
 
-## 9. Weather-aware replanning is the core stress test
+## 9. Weather-aware replanning is the core stress test · 天气感知重规划——核心压力测试
 
 The weather replay includes deterministic disruption blocks (rain, forest fire, rocket launch, etc.). During poor conditions, **a naive agent may waste time, wait too much, or spend good targets in bad sky**. A stronger agent can:
 
@@ -330,7 +330,7 @@ The weather replay includes deterministic disruption blocks (rain, forest fire, 
 
 ---
 
-## 10. Result visualization
+## 10. Result visualization · 结果可视化
 
 The test data also contain a deterministic mock target-coordinate catalog. Each tile's target counts are bound to fixed mock coordinates by seed, tile_id, and target class. After an agent run, the simulator converts completed tile fractions into an observed-target map.
 
@@ -382,7 +382,7 @@ The reference implementation includes utilities that regenerate these figures fo
 
 ---
 
-## 11. Participant workflow
+## 11. Participant workflow · 参赛者工作流
 
 1. **Read** the Survey Mission Card.
    **阅读** Survey Mission Card。
@@ -401,7 +401,7 @@ The reference implementation includes utilities that regenerate these figures fo
 
 ---
 
-## 12. How scoring works
+## 12. How scoring works · 评分如何计算
 
 The score is computed by the organizers after the run. It rewards weighted effective targets and penalizes uneven footprint coverage, wasted time, rule violations, and incomplete high-priority tiles.
 
@@ -421,7 +421,7 @@ Your agent may use any internal decision logic; shaping that logic to anticipate
 
 ---
 
-## 13. Scored scope
+## 13. Scored scope · 评分范围
 
 - **Primary evaluation:** short-term observation planning, scored as described in §12.
   **主要评测：** 短期观测规划，按 §12 计分。
@@ -441,7 +441,7 @@ Your agent may use any internal decision logic; shaping that logic to anticipate
 
 ---
 
-## 14. Open science design
+## 14. Open science design · 开放科学设计
 
 This challenge is built so that its results can be trusted, checked, and extended by the community:
 
@@ -458,7 +458,7 @@ This challenge is built so that its results can be trusted, checked, and extende
 
 ---
 
-## 15. Why this matters
+## 15. Why this matters · 为什么这件事重要
 
 Intelligent telescope systems need more than model accuracy. They need to reason under changing conditions, explain decisions, respect constraints, and remain useful to scientists. This hackathon gives the community a concrete place to build and compare those capabilities.
 
@@ -470,7 +470,7 @@ Intelligent telescope systems need more than model accuracy. They need to reason
 
 ---
 
-## 16. Public science references
+## 16. Public science references · 公开科学参考文献
 
 - DESI official site — <https://www.desi.lbl.gov/>
 - DESI science overview — <https://www.desi.lbl.gov/science/>

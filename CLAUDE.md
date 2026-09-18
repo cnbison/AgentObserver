@@ -156,6 +156,14 @@ Co-Authored-By: Claude <noreply@anthropic.com>
 
 ## 7. 近期变更
 
+### 2026-09-18 · §1–§16 主标题改为中英双语
+
+- `marketing/gosim_survey_agent_hackathon_intro.md` 第 §1–§16 共 16 个 `## N.` 标题
+  从「英文单语」改为「英文 · 中文」双语格式（与正文保持一致）
+- 中文译名与 TOC 表一致，避免重复定义
+
+**Commit**: <pending>
+
 ### 2026-09-18 · 删除中文译版 PDF（已被双语 md 替代）
 
 - 删除 `marketing/gosim_survey_agent_hackathon_intro_cn.pdf`（10.8 MB）：其内容已由双语版 `gosim_survey_agent_hackathon_intro.md` 完整覆盖
