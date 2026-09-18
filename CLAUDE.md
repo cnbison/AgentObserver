@@ -165,7 +165,7 @@ Co-Authored-By: Claude <noreply@anthropic.com>
   - 3 处 ASCII 图：FIG 5.1 数据流图、FIG 8.1 内容字典、§3 名词表（PDF 中为矢量框图，无独立光栅图）
   - 附录：6 张图的版权与授权清单（含 NASA Hubble 公共领域、DESI CC BY 4.0）
 
-**Commit**: <pending>
+**Commit**: 1acb738
 
 ### 2026-09-17 · 新增 starter-kit 深度分析文档
 
