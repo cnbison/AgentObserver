@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>agent-observer-promo-01_排版_红白色系(red-white) · 公众号排版预览</title>
+<style>
+  body{margin:0;background:#eef0f2;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;-webkit-text-size-adjust:100%;}
+  .gzh-toolbar{position:fixed;top:0;left:0;right:0;height:54px;background:#ffffff;box-shadow:0 1px 10px rgba(0,0,0,.08);display:flex;align-items:center;justify-content:space-between;padding:0 16px;z-index:99;}
+  .gzh-hint{font-size:13px;color:#6b7280;line-height:1.4;}
+  .gzh-hint b{color:#111827;}
+  .gzh-copy{background:#059669;color:#fff;border:0;border-radius:9px;padding:10px 20px;font-size:14px;font-weight:700;cursor:pointer;box-shadow:0 3px 10px rgba(5,150,105,.28);white-space:nowrap;transition:transform .08s,background .15s;}
+  .gzh-copy:hover{background:#047857;}
+  .gzh-copy:active{transform:translateY(1px);}
+  .gzh-toast{position:fixed;top:66px;left:50%;transform:translateX(-50%);background:#111827;color:#fff;padding:11px 20px;border-radius:10px;font-size:14px;font-weight:600;opacity:0;pointer-events:none;transition:opacity .25s;z-index:100;box-shadow:0 6px 20px rgba(0,0,0,.25);max-width:88vw;text-align:center;}
+  .gzh-toast.show{opacity:1;}
+  .gzh-stage{max-width:700px;margin:78px auto 64px;padding:0 8px;}
+  @media(max-width:520px){.gzh-hint{max-width:150px;}}
+</style>
+</head>
+<body>
+<div class="gzh-toolbar">
+  <span class="gzh-hint">👇 下方是排版效果 · 点右侧 <b>复制</b> 直接粘到公众号</span>
+  <button class="gzh-copy" id="gzhCopyBtn" onclick="gzhCopy()">📋 复制到公众号</button>
+</div>
+<div class="gzh-toast" id="gzhToast"></div>
+<div class="gzh-stage">
+  <div id="gzh-content">
+<section style="max-width:677px;margin:0 auto;background:#ffffff;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;color:#374151;line-height:1.75;letter-spacing:0.5px;overflow-x:hidden;">
+
+  <!-- 1. 开头引言卡片（组件2，白底红色光晕） -->
+  <section style="margin:10px 10px 32px;background:#ffffff;border-radius:12px;box-shadow:0 4px 24px -4px rgba(220,38,38,0.15);padding:28px 24px 22px;overflow:hidden;">
+    <p style="font-size:42px;color:#DC2626;font-weight:900;margin:0;line-height:0.6;">
+      <span leaf="">"</span>
+    </p>
+    <p style="font-size:16px;font-weight:800;color:#1C1917;margin:12px 0 8px;line-height:1.75;padding-left:4px;">
+      <span style="background:#DC2626;color:#FFFFFF;padding:2px 8px;border-radius:4px;"><span leaf="">900 秒</span></span>
+      <span leaf="">做一次关键决策，</span>
+      <span style="background:#DC2626;color:#FFFFFF;padding:2px 8px;border-radius:4px;"><span leaf="">180 个夜</span></span>
+      <span leaf="">看清一片未知天空——把巡天决策交给 AI，你只改一个函数。</span>
+    </p>
+    <p style="text-align:right;font-size:12px;color:#9CA3AF;margin:8px 0 0;letter-spacing:1px;">
+      <span leaf="">—— GOSIM Agent Observer 黑客松 2026</span>
+    </p>
+  </section>
+
+  <!-- 2. 封面图（组件14） -->
+  <section style="background:#FFF;border-radius:12px;padding:6px;border:1px solid #E5E7EB;box-shadow:0 4px 12px -2px rgba(0,0,0,0.08);margin:0 10px 10px;">
+    <section style="margin:0;border-radius:8px;overflow:hidden;">
+      <span leaf=""><img src="../assets/agent-observer/cosmos-observatory-hero-BV_aYwWD.jpg" style="max-width:100%;height:auto;display:block;margin:0 auto;"></span>
+    </section>
+  </section>
+  <p style="font-size:12px;color:#9CA3AF;text-align:center;margin:0 0 24px;">
+    <span leaf="">— 图：夜色中的观测台穹顶</span>
+  </p>
+
+  <!-- 3. 开场正文段落（组件6，每段 1~3 处淡粉下划线 7d） -->
+  <section style="padding:0 10px;">
+    <p style="margin-bottom:20px;font-size:15px;line-height:1.8;text-align:justify;">
+      <span leaf="">2026 年 10 月 16–17 日，</span>
+      <span style="border-bottom:2px solid #FECACA;font-weight:600;"><span leaf="">GOSIM Shenzhen 2026</span></span>
+      <span leaf="">将在中国深圳启幕。作为 GOSIM 全球开源创新汇的第 7 站，这场以开源 AI 为核心的大会将汇聚 </span>
+      <strong style="color:#DC2626;"><span leaf="">150+ 全球讲师与 2000+ 一线开发者</span></strong>
+      <span leaf="">，围绕 Agentic AI、开源模型与基础设施、开源机器人等前沿方向展开交流——GOSIM Spotlight 现场路演、黑客松与机器人挑战赛同步上演。</span>
+    </p>
+    <p style="margin-bottom:20px;font-size:15px;line-height:1.8;text-align:justify;">
+      <span style="border-bottom:2px solid #FECACA;font-weight:600;"><span leaf="">GOSIM Agent Observer（巡天智能体）黑客松</span></span>
+      <span leaf="">即将重磅启动。这场赛事把天文台里「下一个 900 秒」最关键的观测决策，</span>
+      <strong style="color:#DC2626;"><span leaf="">变成一道面向全球开发者的 AI 实战题</span></strong>
+      <span leaf="">。这个秋天，我们从线上练习赛出发，走向深圳 GOSIM 大会的荣耀舞台。</span>
+    </p>
+  </section>
+
+  <!-- 4. 前言导读（组件3，3 个核心看点） -->
+  <section style="padding:0 10px 32px;">
+    <p style="font-size:14px;color:#9CA3AF;margin:0 0 14px;letter-spacing:1px;">
+      <span leaf="">📌 本文看点</span>
+    </p>
+    <section style="display:flex;justify-content:space-between;">
+      <section style="flex:1;background:#FEF2F2;border-radius:10px;padding:16px 12px;margin-right:8px;text-align:center;border:1px solid #FEE2E2;">
+        <p style="display:inline-block;background:#DC2626;color:#FFFFFF;font-size:12px;font-weight:800;padding:2px 10px;border-radius:4px;margin:0 0 8px;"><span leaf="">01</span></p>
+        <p style="font-size:13px;font-weight:700;color:#1C1917;margin:0;"><span leaf="">全球首个巡天决策赛事</span></p>
+      </section>
+      <section style="flex:1;background:#FEF2F2;border-radius:10px;padding:16px 12px;margin-right:8px;text-align:center;border:1px solid #FEE2E2;">
+        <p style="display:inline-block;background:#DC2626;color:#FFFFFF;font-size:12px;font-weight:800;padding:2px 10px;border-radius:4px;margin:0 0 8px;"><span leaf="">02</span></p>
+        <p style="font-size:13px;font-weight:700;color:#1C1917;margin:0;"><span leaf="">$5,500 奖金 · 6 大奖项</span></p>
+      </section>
+      <section style="flex:1;background:#FEF2F2;border-radius:10px;padding:16px 12px;text-align:center;border:1px solid #FEE2E2;">
+        <p style="display:inline-block;background:#DC2626;color:#FFFFFF;font-size:12px;font-weight:800;padding:2px 10px;border-radius:4px;margin:0 0 8px;"><span leaf="">03</span></p>
+        <p style="font-size:13px;font-weight:700;color:#1C1917;margin:0;"><span leaf="">只改一个函数 choose_action</span></p>
+      </section>
+    </section>
+  </section>
+
+  <!-- 5. 章节分割线（组件4） -->
+  <section style="padding:0 10px;">
+    <section style="height:1px;background:linear-gradient(to right,transparent,#FCA5A5,#DC2626,#FCA5A5,transparent);margin:0;">
+      <span leaf=""><br></span>
+    </section>
+  </section>
+
+  <!-- ========== §01 这是一场怎样的比赛 ========== -->
+  <section style="margin-top:48px;margin-bottom:28px;padding:0 10px;">
+    <section style="display:flex;align-items:center;justify-content:space-between;margin-bottom:20px;padding-bottom:14px;border-bottom:3px solid #DC2626;">
+      <section style="display:flex;align-items:center;">
+        <span style="display:inline-block;background:#DC2626;color:#FFFFFF;font-size:18px;font-weight:900;padding:4px 14px;border-radius:6px;margin-right:14px;line-height:1.3;"><span leaf="">01</span></span>
+        <section>
+          <p style="font-size:10px;color:#DC2626;font-weight:700;letter-spacing:3px;margin:0 0 2px;text-transform:uppercase;">
+            <span leaf="">HOW IT WORKS</span>
+          </p>
+          <h3 style="font-size:18px;font-weight:800;color:#1C1917;margin:0;letter-spacing:0.5px;">
+            <span leaf="">这是一场怎样的比赛？</span>
+          </h3>
+        </section>
+      </section>
+    </section>
+
+    <p style="margin-bottom:20px;font-size:15px;line-height:1.8;text-align:justify;">
+      <span leaf="">这不是一场普通的 AI 比赛。</span>
+      <span style="border-bottom:2px solid #FECACA;font-weight:600;"><span leaf="">Agent Observer 黑客松，是全球首个面向「巡天观测决策」的智能体赛事</span></span>
+      <span leaf="">——</span>
+    </p>
+
+    <p style="margin-bottom:20px;font-size:15px;line-height:1.8;text-align:justify;">
+      <span leaf="">天文台的每一个夜晚，都由无数个「</span>
+      <strong style="color:#DC2626;"><span leaf="">接下来的 900 秒</span></strong>
+      <span leaf="">」组成。在这 15 分钟里，观测员要在不确定的天气、滞后的预报、随时可能被打断的巡天计划之间，做出「现在观测哪个天区」的判断。这件事一旦交给 AI 来做，</span>
+      <span style="border-bottom:2px solid #FECACA;font-weight:600;"><span leaf="">难度远超下围棋或写代码</span></span>
+      <span leaf="">——</span>
+    </p>
+
+    <section style="margin-bottom:24px;">
+      <section style="display:flex;align-items:flex-start;gap:10px;margin-bottom:12px;">
+        <span style="display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;background:#DC2626;color:#fff;font-size:12px;font-weight:700;border-radius:50%;flex-shrink:0;margin-top:2px;"><span leaf="">1</span></span>
+        <p style="font-size:15px;color:#374151;margin:0;line-height:1.8;flex:1;"><span leaf="">棋盘是确定的，天文台不是；</span></p>
+      </section>
+      <section style="display:flex;align-items:flex-start;gap:10px;margin-bottom:12px;">
+        <span style="display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;background:#DC2626;color:#fff;font-size:12px;font-weight:700;border-radius:50%;flex-shrink:0;margin-top:2px;"><span leaf="">2</span></span>
+        <p style="font-size:15px;color:#374151;margin:0;line-height:1.8;flex:1;"><span leaf="">目标是清晰的，</span><span style="border-bottom:2px solid #FECACA;font-weight:600;"><span leaf="">回报是不确定的</span></span><span leaf="">；</span></p>
+      </section>
+      <section style="display:flex;align-items:flex-start;gap:10px;margin-bottom:12px;">
+        <span style="display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;background:#DC2626;color:#fff;font-size:12px;font-weight:700;border-radius:50%;flex-shrink:0;margin-top:2px;"><span leaf="">3</span></span>
+        <p style="font-size:15px;color:#374151;margin:0;line-height:1.8;flex:1;"><span leaf="">一局有终局，</span><span style="border-bottom:2px solid #FECACA;font-weight:600;"><span leaf="">巡天有 180 个夜</span></span><span leaf="">。</span></p>
+      </section>
+    </section>
+
+    <p style="margin-bottom:20px;font-size:15px;line-height:1.8;text-align:justify;">
+      <span leaf="">本场黑客松由 </span>
+      <strong style="color:#DC2626;"><span leaf="">开放智能体产业联盟（OAIC）</span></strong>
+      <span leaf="">主办、</span>
+      <span style="border-bottom:2px solid #FECACA;font-weight:600;"><span leaf="">启悟社区</span></span>
+      <span leaf="">（教育部支持）联合主办，</span>
+      <span style="border-bottom:2px solid #FECACA;font-weight:600;"><span leaf="">借鉴 DESI（暗能量光谱巡天）等真实巡天任务的协议设计</span></span>
+      <span leaf="">。你写的智能体将跑在统一的 Python 3.12 沙箱里，</span>
+      <strong style="color:#DC2626;"><span leaf="">同一份巡天计划、同一个模拟器、同一种计分</span></strong>
+      <span leaf="">——</span>
+      <span style="border-bottom:2px solid #FECACA;font-weight:600;"><span leaf="">唯一的变量，就是你写的策略</span></span>
+      <span leaf="">。</span>
+    </p>
+
+    <section style="background:#FEF2F2;border-radius:0 10px 10px 0;border-left:4px solid #DC2626;padding:18px 22px;margin-bottom:24px;">
+      <p style="font-size:16px;font-weight:800;color:#991B1B;margin:0;line-height:1.8;">
+        <span leaf="">「适合谁参加：写过 LangGraph 的工程师、做天文社的爱好者、刚跑通 </span><span style="background:#F1F5F9;color:#DC2626;padding:1px 6px;border-radius:4px;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:14px;"><span leaf="">hello.py</span></span><span leaf=""> 的初学者、想用 AI 解决真实科学问题的研究者——整个比赛你只需要改一个函数 </span><span style="background:#F1F5F9;color:#DC2626;padding:1px 6px;border-radius:4px;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:14px;"><span leaf="">choose_action</span></span><span leaf="">。」</span>
+      </p>
+    </section>
+  </section>
+
+  <!-- 章节分割线 -->
+  <section style="padding:0 10px;">
+    <section style="height:1px;background:linear-gradient(to right,transparent,#FCA5A5,#DC2626,#FCA5A5,transparent);margin:0;">
+      <span leaf=""><br></span>
+    </section>
+  </section>
+
+  <!-- ========== §02 数字速览 ========== -->
+  <section style="margin-top:48px;margin-bottom:28px;padding:0 10px;">
+    <section style="display:flex;align-items:center;justify-content:space-between;margin-bottom:20px;padding-bottom:14px;border-bottom:3px solid #DC2626;">
+      <section style="display:flex;align-items:center;">
+        <span style="display:inline-block;background:#DC2626;color:#FFFFFF;font-size:18px;font-weight:900;padding:4px 14px;border-radius:6px;margin-right:14px;line-height:1.3;"><span leaf="">02</span></span>
+        <section>
+          <p style="font-size:10px;color:#DC2626;font-weight:700;letter-spacing:3px;margin:0 0 2px;text-transform:uppercase;">
+            <span leaf="">KEY NUMBERS</span>
+          </p>
+          <h3 style="font-size:18px;font-weight:800;color:#1C1917;margin:0;letter-spacing:0.5px;">
+            <span leaf="">数字速览</span>
+          </h3>
+        </section>
+      </section>
+    </section>
+
+    <p style="margin-bottom:20px;font-size:15px;line-height:1.8;text-align:justify;">
+      <span leaf="">一图速览这场赛事的关键数字：</span>
+    </p>
+
+    <!-- 数据卡组（组件12 四列：奖金 / 奖项 / 观测夜 / 时隙） -->
+    <section style="display:flex;margin-bottom:12px;padding:0;">
+      <section style="flex:1;background:#FEF2F2;border-radius:10px;padding:18px 10px;margin-right:8px;text-align:center;border:1px solid #FEE2E2;">
+        <p style="font-size:24px;font-weight:900;color:#DC2626;margin:0 0 4px;line-height:1;"><span leaf="">$5,500</span></p>
+        <p style="font-size:11px;color:#9CA3AF;margin:0;"><span leaf="">奖金池</span></p>
+      </section>
+      <section style="flex:1;background:#FEF2F2;border-radius:10px;padding:18px 10px;margin-right:8px;text-align:center;border:1px solid #FEE2E2;">
+        <p style="font-size:24px;font-weight:900;color:#DC2626;margin:0 0 4px;line-height:1;"><span leaf="">6</span></p>
+        <p style="font-size:11px;color:#9CA3AF;margin:0;"><span leaf="">奖项数</span></p>
+      </section>
+      <section style="flex:1;background:#FEF2F2;border-radius:10px;padding:18px 10px;margin-right:8px;text-align:center;border:1px solid #FEE2E2;">
+        <p style="font-size:24px;font-weight:900;color:#DC2626;margin:0 0 4px;line-height:1;"><span leaf="">180</span></p>
+        <p style="font-size:11px;color:#9CA3AF;margin:0;"><span leaf="">观测夜</span></p>
+      </section>
+      <section style="flex:1;background:#FEF2F2;border-radius:10px;padding:18px 10px;text-align:center;border:1px solid #FEE2E2;">
+        <p style="font-size:24px;font-weight:900;color:#DC2626;margin:0 0 4px;line-height:1;"><span leaf="">900s</span></p>
+        <p style="font-size:11px;color:#9CA3AF;margin:0;"><span leaf="">决策时隙</span></p>
+      </section>
+    </section>
+
+    <!-- 数据卡组（第二行：队伍 / 基线 / 环境 / 复盘） -->
+    <section style="display:flex;margin-bottom:24px;padding:0;">
+      <section style="flex:1;background:#FEF2F2;border-radius:10px;padding:18px 10px;margin-right:8px;text-align:center;border:1px solid #FEE2E2;">
+        <p style="font-size:24px;font-weight:900;color:#DC2626;margin:0 0 4px;line-height:1;"><span leaf="">1–8</span></p>
+        <p style="font-size:11px;color:#9CA3AF;margin:0;"><span leaf="">队伍规模</span></p>
+      </section>
+      <section style="flex:1;background:#FEF2F2;border-radius:10px;padding:18px 10px;margin-right:8px;text-align:center;border:1px solid #FEE2E2;">
+        <p style="font-size:24px;font-weight:900;color:#DC2626;margin:0 0 4px;line-height:1;"><span leaf="">12,287</span></p>
+        <p style="font-size:11px;color:#9CA3AF;margin:0;"><span leaf="">基线分数</span></p>
+      </section>
+      <section style="flex:1;background:#FEF2F2;border-radius:10px;padding:18px 10px;margin-right:8px;text-align:center;border:1px solid #FEE2E2;">
+        <p style="font-size:24px;font-weight:900;color:#DC2626;margin:0 0 4px;line-height:1;"><span leaf="">3.12</span></p>
+        <p style="font-size:11px;color:#9CA3AF;margin:0;"><span leaf="">Python 版本</span></p>
+      </section>
+      <section style="flex:1;background:#FEF2F2;border-radius:10px;padding:18px 10px;text-align:center;border:1px solid #FEE2E2;">
+        <p style="font-size:24px;font-weight:900;color:#DC2626;margin:0 0 4px;line-height:1;"><span leaf="">90 天</span></p>
+        <p style="font-size:11px;color:#9CA3AF;margin:0;"><span leaf="">数据保留</span></p>
+      </section>
+    </section>
+
+    <!-- 表格（奖项结构） -->
+    <section style="margin-bottom:24px;overflow-x:auto;">
+      <table style="width:100%;border-collapse:collapse;font-size:14px;">
+        <thead>
+          <tr>
+            <th style="background:#DC2626;color:#fff;font-weight:700;padding:8px 12px;text-align:left;"><span leaf="">奖项</span></th>
+            <th style="background:#DC2626;color:#fff;font-weight:700;padding:8px 12px;text-align:center;"><span leaf="">数量</span></th>
+            <th style="background:#DC2626;color:#fff;font-weight:700;padding:8px 12px;text-align:right;"><span leaf="">奖金</span></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="padding:8px 12px;border-bottom:1px solid #FEE2E2;color:#374151;"><span leaf="">🏆 一等奖</span></td>
+            <td style="padding:8px 12px;border-bottom:1px solid #FEE2E2;color:#374151;text-align:center;"><span leaf="">1</span></td>
+            <td style="padding:8px 12px;border-bottom:1px solid #FEE2E2;color:#374151;background:#FEF2F2;text-align:right;"><strong style="color:#DC2626;"><span leaf="">$2,000</span></strong></td>
+          </tr>
+          <tr>
+            <td style="padding:8px 12px;border-bottom:1px solid #FEE2E2;color:#374151;"><span leaf="">🥈 二等奖</span></td>
+            <td style="padding:8px 12px;border-bottom:1px solid #FEE2E2;color:#374151;text-align:center;"><span leaf="">2</span></td>
+            <td style="padding:8px 12px;border-bottom:1px solid #FEE2E2;color:#374151;background:#FEF2F2;text-align:right;"><span leaf="">$1,000 × 2</span></td>
+          </tr>
+          <tr>
+            <td style="padding:8px 12px;border-bottom:1px solid #FEE2E2;color:#374151;"><span leaf="">🥉 三等奖</span></td>
+            <td style="padding:8px 12px;border-bottom:1px solid #FEE2E2;color:#374151;text-align:center;"><span leaf="">3</span></td>
+            <td style="padding:8px 12px;border-bottom:1px solid #FEE2E2;color:#374151;background:#FEF2F2;text-align:right;"><span leaf="">$500 × 3</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </section>
+
+  <!-- 章节分割线 -->
+  <section style="padding:0 10px;">
+    <section style="height:1px;background:linear-gradient(to right,transparent,#FCA5A5,#DC2626,#FCA5A5,transparent);margin:0;">
+      <span leaf=""><br></span>
+    </section>
+  </section>
+
+  <!-- ========== §03 赛程 ========== -->
+  <section style="margin-top:48px;margin-bottom:28px;padding:0 10px;">
+    <section style="display:flex;align-items:center;justify-content:space-between;margin-bottom:20px;padding-bottom:14px;border-bottom:3px solid #DC2626;">
+      <section style="display:flex;align-items:center;">
+        <span style="display:inline-block;background:#DC2626;color:#FFFFFF;font-size:18px;font-weight:900;padding:4px 14px;border-radius:6px;margin-right:14px;line-height:1.3;"><span leaf="">03</span></span>
+        <section>
+          <p style="font-size:10px;color:#DC2626;font-weight:700;letter-spacing:3px;margin:0 0 2px;text-transform:uppercase;">
+            <span leaf="">SCHEDULE</span>
+          </p>
+          <h3 style="font-size:18px;font-weight:800;color:#1C1917;margin:0;letter-spacing:0.5px;">
+            <span leaf="">赛程：从 9 月报名到 10 月深圳颁奖</span>
+          </h3>
+        </section>
+      </section>
+    </section>
+
+    <section style="margin-bottom:24px;overflow-x:auto;">
+      <table style="width:100%;border-collapse:collapse;font-size:14px;">
+        <thead>
+          <tr>
+            <th style="background:#DC2626;color:#fff;font-weight:700;padding:8px 12px;text-align:left;"><span leaf="">阶段</span></th>
+            <th style="background:#DC2626;color:#fff;font-weight:700;padding:8px 12px;text-align:left;"><span leaf="">时间</span></th>
+            <th style="background:#DC2626;color:#fff;font-weight:700;padding:8px 12px;text-align:left;"><span leaf="">内容</span></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="padding:8px 12px;border-bottom:1px solid #FEE2E2;color:#374151;"><span leaf="">📚 线上培训</span></td>
+            <td style="padding:8px 12px;border-bottom:1px solid #FEE2E2;color:#374151;"><span leaf="">10 月 1–4 日</span></td>
+            <td style="padding:8px 12px;border-bottom:1px solid #FEE2E2;color:#374151;background:#FEF2F2;"><span leaf="">赛题讲解 / 入门包培训 / 答疑指导</span></td>
+          </tr>
+          <tr>
+            <td style="padding:8px 12px;border-bottom:1px solid #FEE2E2;color:#374151;"><span leaf="">⚔️ 线上比赛</span></td>
+            <td style="padding:8px 12px;border-bottom:1px solid #FEE2E2;color:#374151;"><span leaf="">10 月 5–7 日</span></td>
+            <td style="padding:8px 12px;border-bottom:1px solid #FEE2E2;color:#374151;background:#FEF2F2;"><span leaf="">同一模拟器、同一天气回放，看谁的策略最稳</span></td>
+          </tr>
+          <tr>
+            <td style="padding:8px 12px;border-bottom:1px solid #FEE2E2;color:#374151;"><span leaf="">🏆 深圳颁奖</span></td>
+            <td style="padding:8px 12px;border-bottom:1px solid #FEE2E2;color:#374151;"><span leaf="">10 月 17 日</span></td>
+            <td style="padding:8px 12px;border-bottom:1px solid #FEE2E2;color:#374151;background:#FEF2F2;"><span leaf="">GOSIM Shenzhen 2026 大会现场颁奖</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section style="background:#FEF2F2;border-radius:0 8px 8px 0;border-left:4px solid #DC2626;padding:14px 20px;margin-bottom:24px;">
+      <p style="font-size:14px;font-weight:700;color:#991B1B;margin:0;line-height:1.8;">
+        <span leaf="">💡 练习赛现已开放——</span>
+        <strong style="color:#DC2626;"><span leaf="">每队每天 50 次提交</span></strong>
+        <span leaf="">。线上比赛 10.04 16:00 UTC 起，</span>
+        <strong style="color:#DC2626;"><span leaf="">每队每天 10 次提交</span></strong>
+        <span leaf="">。</span>
+      </p>
+    </section>
+
+    <!-- 控制室图（组件14） -->
+    <section style="background:#FFF;border-radius:12px;padding:6px;border:1px solid #E5E7EB;box-shadow:0 4px 12px -2px rgba(0,0,0,0.08);margin-bottom:8px;">
+      <section style="margin:0;border-radius:8px;overflow:hidden;">
+        <span leaf=""><img src="../assets/agent-observer/cosmos-control-room-DALcRogD.jpg" style="max-width:100%;height:auto;display:block;margin:0 auto;"></span>
+      </section>
+    </section>
+    <p style="font-size:12px;color:#9CA3AF;text-align:center;margin:0 0 24px;">
+      <span leaf="">— 图：巡天控制室——夜晚值班的主战场</span>
+    </p>
+  </section>
+
+  <!-- 章节分割线 -->
+  <section style="padding:0 10px;">
+    <section style="height:1px;background:linear-gradient(to right,transparent,#FCA5A5,#DC2626,#FCA5A5,transparent);margin:0;">
+      <span leaf=""><br></span>
+    </section>
+  </section>
+
+  <!-- ========== §04 三大核心原则 ========== -->
+  <section style="margin-top:48px;margin-bottom:28px;padding:0 10px;">
+    <section style="display:flex;align-items:center;justify-content:space-between;margin-bottom:20px;padding-bottom:14px;border-bottom:3px solid #DC2626;">
+      <section style="display:flex;align-items:center;">
+        <span style="display:inline-block;background:#DC2626;color:#FFFFFF;font-size:18px;font-weight:900;padding:4px 14px;border-radius:6px;margin-right:14px;line-height:1.3;"><span leaf="">04</span></span>
+        <section>
+          <p style="font-size:10px;color:#DC2626;font-weight:700;letter-spacing:3px;margin:0 0 2px;text-transform:uppercase;">
+            <span leaf="">THREE PRINCIPLES</span>
+          </p>
+          <h3 style="font-size:18px;font-weight:800;color:#1C1917;margin:0;letter-spacing:0.5px;">
+            <span leaf="">三大核心原则</span>
+          </h3>
+        </section>
+      </section>
+    </section>
+
+    <!-- 原则 ① -->
+    <section style="margin-bottom:14px;">
+      <p style="margin:0 0 6px;">
+        <span style="display:inline-block;font-size:14px;font-weight:700;color:#991B1B;background:#FEE2E2;padding:3px 10px;border-radius:999px;"><span style="display:inline-block;width:6px;height:6px;background:#DC2626;border-radius:50%;margin-right:5px;vertical-align:middle;"><span leaf=""><br></span></span><span leaf="">开放祛魅，零门槛赋能</span></span>
+      </p>
+      <p style="font-size:14px;color:#4B5563;margin:0;line-height:1.7;text-align:justify;">
+        <span leaf="">赛事面向全球所有开发者开放，</span>
+        <span style="border-bottom:2px solid #FECACA;font-weight:600;"><span leaf="">无学历、资历、团队、行业门槛</span></span>
+        <span leaf="">。配套线上研习营，提供系统技术培训、案例讲解、答疑指导，帮助新手快速入门、老手突破瓶颈，让智能体巡天决策这门「硬核手艺」可学、可做、可落地。</span>
+      </p>
+    </section>
+
+    <!-- 原则 ② -->
+    <section style="margin-bottom:14px;">
+      <p style="margin:0 0 6px;">
+        <span style="display:inline-block;font-size:14px;font-weight:700;color:#991B1B;background:#FEE2E2;padding:3px 10px;border-radius:999px;"><span style="display:inline-block;width:6px;height:6px;background:#DC2626;border-radius:50%;margin-right:5px;vertical-align:middle;"><span leaf=""><br></span></span><span leaf="">公平竞技，实力论突破</span></span>
+      </p>
+      <p style="font-size:14px;color:#4B5563;margin:0;line-height:1.7;text-align:justify;">
+        <span style="border-bottom:2px solid #FECACA;font-weight:600;"><span leaf="">同一份巡天计划、同一个模拟器、同一种计分</span></span>
+        <span leaf="">。全程统一赛题、统一沙箱评测环境，所有队伍站在同一起跑线，摒弃资源、设备、渠道差距。比拼核心聚焦技术思路与策略稳健性，让每一份创新与深耕都能被看见。</span>
+      </p>
+    </section>
+
+    <!-- 原则 ③ -->
+    <section style="margin-bottom:24px;">
+      <p style="margin:0 0 6px;">
+        <span style="display:inline-block;font-size:14px;font-weight:700;color:#991B1B;background:#FEE2E2;padding:3px 10px;border-radius:999px;"><span style="display:inline-block;width:6px;height:6px;background:#DC2626;border-radius:50%;margin-right:5px;vertical-align:middle;"><span leaf=""><br></span></span><span leaf="">真实落地，拒绝空壳 Demo</span></span>
+      </p>
+      <p style="font-size:14px;color:#4B5563;margin:0;line-height:1.7;text-align:justify;">
+        <span leaf="">赛题源自 DESI 等真实巡天任务的协议设计，</span>
+        <span style="border-bottom:2px solid #FECACA;font-weight:600;"><span leaf="">评分公式</span></span>
+        <span leaf="">为 </span><span style="background:#F1F5F9;color:#DC2626;padding:1px 6px;border-radius:4px;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:14px;"><span leaf="">score = base_science + program_bonus + request_reward − penalty_total</span></span><span leaf="">。</span>
+        <strong style="color:#DC2626;"><span leaf="">开发天气与最终评测天气分离</span></strong>
+        <span leaf="">，比的是泛化能力，不是过拟合。</span>
+      </p>
+    </section>
+  </section>
+
+  <!-- 章节分割线 -->
+  <section style="padding:0 10px;">
+    <section style="height:1px;background:linear-gradient(to right,transparent,#FCA5A5,#DC2626,#FCA5A5,transparent);margin:0;">
+      <span leaf=""><br></span>
+    </section>
+  </section>
+
+  <!-- ========== §05 你能获得什么 ========== -->
+  <section style="margin-top:48px;margin-bottom:28px;padding:0 10px;">
+    <section style="display:flex;align-items:center;justify-content:space-between;margin-bottom:20px;padding-bottom:14px;border-bottom:3px solid #DC2626;">
+      <section style="display:flex;align-items:center;">
+        <span style="display:inline-block;background:#DC2626;color:#FFFFFF;font-size:18px;font-weight:900;padding:4px 14px;border-radius:6px;margin-right:14px;line-height:1.3;"><span leaf="">05</span></span>
+        <section>
+          <p style="font-size:10px;color:#DC2626;font-weight:700;letter-spacing:3px;margin:0 0 2px;text-transform:uppercase;">
+            <span leaf="">WHAT YOU GET</span>
+          </p>
+          <h3 style="font-size:18px;font-weight:800;color:#1C1917;margin:0;letter-spacing:0.5px;">
+            <span leaf="">你能获得什么？</span>
+          </h3>
+        </section>
+      </section>
+    </section>
+
+    <section style="margin-bottom:24px;">
+      <section style="display:flex;align-items:flex-start;gap:10px;margin-bottom:12px;">
+        <span style="display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;background:#DC2626;color:#fff;font-size:12px;font-weight:700;border-radius:50%;flex-shrink:0;margin-top:2px;"><span leaf="">1</span></span>
+        <p style="font-size:15px;color:#374151;margin:0;line-height:1.8;flex:1;"><strong style="color:#DC2626;"><span leaf="">$5,500 奖金池，6 个奖项</span></strong><span leaf="">——一等奖 $2,000、二等奖 $1,000 × 2、三等奖 $500 × 3</span></p>
+      </section>
+      <section style="display:flex;align-items:flex-start;gap:10px;margin-bottom:12px;">
+        <span style="display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;background:#DC2626;color:#fff;font-size:12px;font-weight:700;border-radius:50%;flex-shrink:0;margin-top:2px;"><span leaf="">2</span></span>
+        <p style="font-size:15px;color:#374151;margin:0;line-height:1.8;flex:1;"><span style="border-bottom:2px solid #FECACA;font-weight:600;"><span leaf="">GOSIM Shenzhen 2026 大会曝光</span></span><span leaf="">——优胜队伍受邀出席深圳颁奖，与全球 150+ 讲师、2000+ 开发者同台</span></p>
+      </section>
+      <section style="display:flex;align-items:flex-start;gap:10px;margin-bottom:12px;">
+        <span style="display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;background:#DC2626;color:#fff;font-size:12px;font-weight:700;border-radius:50%;flex-shrink:0;margin-top:2px;"><span leaf="">3</span></span>
+        <p style="font-size:15px;color:#374151;margin:0;line-height:1.8;flex:1;"><span leaf="">官方完赛证书 + 官网留档</span><span style="border-bottom:2px solid #FECACA;font-weight:600;"><span leaf="">——所有完赛队伍均有官方证书，优胜者永久留档</span></span></p>
+      </section>
+      <section style="display:flex;align-items:flex-start;gap:10px;margin-bottom:12px;">
+        <span style="display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;background:#DC2626;color:#fff;font-size:12px;font-weight:700;border-radius:50%;flex-shrink:0;margin-top:2px;"><span leaf="">4</span></span>
+        <p style="font-size:15px;color:#374151;margin:0;line-height:1.8;flex:1;"><span leaf="">实时排行榜 + 逐夜回放</span><span style="border-bottom:2px solid #FECACA;font-weight:600;"><span leaf="">——你的分数会被全球围观，每一份提交都有完整的可视化复盘</span></span></p>
+      </section>
+      <section style="display:flex;align-items:flex-start;gap:10px;margin-bottom:12px;">
+        <span style="display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;background:#DC2626;color:#fff;font-size:12px;font-weight:700;border-radius:50%;flex-shrink:0;margin-top:2px;"><span leaf="">5</span></span>
+        <p style="font-size:15px;color:#374151;margin:0;line-height:1.8;flex:1;"><span leaf="">数据保留 90 天</span><span style="border-bottom:2px solid #FECACA;font-weight:600;"><span leaf="">——充足时间回头复盘自己的策略演化</span></span></p>
+      </section>
+    </section>
+
+    <section style="border-left:4px solid #D6D3D1;padding:14px 20px;margin-bottom:24px;background:#FAFAFA;border-radius:0 8px 8px 0;">
+      <p style="font-size:14px;color:#374151;margin:0;line-height:1.8;text-align:justify;">
+        <span leaf="">🎯 </span><strong style="color:#DC2626;"><span leaf="">领奖不要求到场</span></strong><span leaf="">——跨境参赛者线上领奖无障碍。</span>
+      </p>
+    </section>
+  </section>
+
+  <!-- 章节分割线 -->
+  <section style="padding:0 10px;">
+    <section style="height:1px;background:linear-gradient(to right,transparent,#FCA5A5,#DC2626,#FCA5A5,transparent);margin:0;">
+      <span leaf=""><br></span>
+    </section>
+  </section>
+
+  <!-- ========== §06 现在就开始 ========== -->
+  <section style="margin-top:48px;margin-bottom:28px;padding:0 10px;">
+    <section style="display:flex;align-items:center;justify-content:space-between;margin-bottom:20px;padding-bottom:14px;border-bottom:3px solid #DC2626;">
+      <section style="display:flex;align-items:center;">
+        <span style="display:inline-block;background:#DC2626;color:#FFFFFF;font-size:18px;font-weight:900;padding:4px 14px;border-radius:6px;margin-right:14px;line-height:1.3;"><span leaf="">06</span></span>
+        <section>
+          <p style="font-size:10px;color:#DC2626;font-weight:700;letter-spacing:3px;margin:0 0 2px;text-transform:uppercase;">
+            <span leaf="">GET STARTED</span>
+          </p>
+          <h3 style="font-size:18px;font-weight:800;color:#1C1917;margin:0;letter-spacing:0.5px;">
+            <span leaf="">现在就开始</span>
+          </h3>
+        </section>
+      </section>
+    </section>
+
+    <p style="margin-bottom:20px;font-size:15px;line-height:1.8;text-align:justify;">
+      <strong style="color:#DC2626;"><span leaf="">20 分钟跑通基线 12,287 分</span></strong>
+      <span leaf="">——注册 → 建队 → 下载入门包 → 改 </span><span style="background:#F1F5F9;color:#DC2626;padding:1px 6px;border-radius:4px;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:14px;"><span leaf="">choose_action</span></span><span leaf=""> → 上传 → 看分数。</span>
+    </p>
+
+    <p style="margin-bottom:20px;font-size:15px;line-height:1.8;text-align:justify;">
+      <span leaf=""><strong style="color:#DC2626;"><span leaf="">官方网站及报名入口</span></strong>：</span>
+    </p>
+
+    <section style="background:#FEF2F2;border-radius:10px;padding:18px 20px;margin-bottom:24px;border:1px solid #FECACA;text-align:center;">
+      <p style="font-size:15px;color:#374151;margin:0;line-height:1.8;text-align:justify;">
+        <span leaf="">官方网站：<a href="https://create.gosim.org/survey26/" style="color:#DC2626;text-decoration:underline;font-weight:700;"><span leaf="">https://create.gosim.org/survey26/</span></a></span>
+      </p>
+    </section>
+
+    <p style="font-size:15px;margin:0 0 24px;text-align:center;color:#DC2626;font-weight:700;letter-spacing:1px;border-top:1px solid #FEE2E2;border-bottom:1px solid #FEE2E2;padding:14px 10px;">
+      <span leaf="">无需天文学背景，只需 Python 3.12。整个比赛你只需要改一个函数。</span>
+    </p>
+
+    <p style="margin-bottom:20px;font-size:15px;line-height:1.8;text-align:justify;">
+      <span leaf="">10 月，深圳见。</span>
+      <strong style="color:#DC2626;"><span leaf="">把夜空的下一步，交给你写的智能体。</span></strong>
+    </p>
+
+    <!-- 收尾图（封面复用） -->
+    <section style="background:#FFF;border-radius:12px;padding:6px;border:1px solid #E5E7EB;box-shadow:0 4px 12px -2px rgba(0,0,0,0.08);margin-bottom:8px;">
+      <section style="margin:0;border-radius:8px;overflow:hidden;">
+        <span leaf=""><img src="../assets/agent-observer/cosmos-observatory-hero-BV_aYwWD.jpg" style="max-width:100%;height:auto;display:block;margin:0 auto;"></span>
+      </section>
+    </section>
+    <p style="font-size:12px;color:#9CA3AF;text-align:center;margin:0 0 24px;">
+      <span leaf="">— 图：观测台主视觉——把镜头指向下一个 900 秒</span>
+    </p>
+  </section>
+
+  <!-- ========== 结语章（∞ + THE END） ========== -->
+  <section style="margin-top:48px;margin-bottom:28px;padding:0 10px;">
+    <section style="display:flex;align-items:center;justify-content:space-between;margin-bottom:20px;padding-bottom:14px;border-bottom:3px solid #DC2626;">
+      <section style="display:flex;align-items:center;">
+        <span style="display:inline-block;background:#DC2626;color:#FFFFFF;font-size:18px;font-weight:900;padding:4px 14px;border-radius:6px;margin-right:14px;line-height:1.3;"><span leaf="">∞</span></span>
+        <section>
+          <p style="font-size:10px;color:#DC2626;font-weight:700;letter-spacing:3px;margin:0 0 2px;text-transform:uppercase;">
+            <span leaf="">THE END</span>
+          </p>
+          <h3 style="font-size:18px;font-weight:800;color:#1C1917;margin:0;letter-spacing:0.5px;">
+            <span leaf="">附录 · 图片版权与署名</span>
+          </h3>
+        </section>
+      </section>
+    </section>
+
+    <section style="margin-bottom:24px;overflow-x:auto;">
+      <table style="width:100%;border-collapse:collapse;font-size:14px;">
+        <thead>
+          <tr>
+            <th style="background:#DC2626;color:#fff;font-weight:700;padding:8px 12px;text-align:left;"><span leaf="">配图位置</span></th>
+            <th style="background:#DC2626;color:#fff;font-weight:700;padding:8px 12px;text-align:left;"><span leaf="">文件</span></th>
+            <th style="background:#DC2626;color:#fff;font-weight:700;padding:8px 12px;text-align:left;"><span leaf="">授权 / 来源</span></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="padding:8px 12px;border-bottom:1px solid #FEE2E2;color:#374151;"><span leaf="">封面 / 文末收尾</span></td>
+            <td style="padding:8px 12px;border-bottom:1px solid #FEE2E2;color:#374151;background:#FEF2F2;"><span leaf="">cosmos-observatory-hero-BV_aYwWD.jpg</span></td>
+            <td style="padding:8px 12px;border-bottom:1px solid #FEE2E2;color:#374151;"><span leaf="">GOSIM Agent Observer 公开素材</span></td>
+          </tr>
+          <tr>
+            <td style="padding:8px 12px;border-bottom:1px solid #FEE2E2;color:#374151;"><span leaf="">§03 巡天控制室</span></td>
+            <td style="padding:8px 12px;border-bottom:1px solid #FEE2E2;color:#374151;background:#FEF2F2;"><span leaf="">cosmos-control-room-DALcRogD.jpg</span></td>
+            <td style="padding:8px 12px;border-bottom:1px solid #FEE2E2;color:#374151;"><span leaf="">GOSIM Agent Observer 公开素材</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <p style="font-size:13px;color:#9CA3AF;margin:0;line-height:1.7;text-align:justify;">
+      <span leaf="">本仓库维护者：cnbison · 配套工具：</span><span style="background:#F1F5F9;color:#DC2626;padding:1px 6px;border-radius:4px;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;"><span leaf="">tools/md2wechat</span></span><span leaf="">（Markdown → 公众号 HTML 转换器）· 完整赛题见 </span><span style="background:#F1F5F9;color:#DC2626;padding:1px 6px;border-radius:4px;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;"><span leaf="">references/survey26_brief.md</span></span><span leaf=""> · 与兄弟赛事 </span><span style="background:#F1F5F9;color:#DC2626;padding:1px 6px;border-radius:4px;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;"><span leaf="">articles/agent-observer-promo.md</span></span><span leaf="">、Factory </span><span style="background:#F1F5F9;color:#DC2626;padding:1px 6px;border-radius:4px;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;"><span leaf="">marketing/gosim_factory_hackathon_intro.md</span></span><span leaf="">、Spotlight </span><span style="background:#F1F5F9;color:#DC2626;padding:1px 6px;border-radius:4px;font-family:'SF Mono',Consolas,Monaco,monospace;font-size:13px;"><span leaf="">marketing/gosim_spotlight_intro.md</span></span><span leaf=""> 并列。</span>
+    </p>
+  </section>
+
+  <!-- END 分割线（组件15） -->
+  <section style="padding:0 10px;">
+    <section style="text-align:center;margin:0 0 32px;">
+      <section style="display:flex;align-items:center;justify-content:center;">
+        <span style="height:2px;width:60px;background:linear-gradient(to right,transparent,#DC2626);margin-right:12px;"><span leaf=""><br></span></span>
+        <span style="font-size:11px;color:#DC2626;letter-spacing:3px;font-weight:700;"><span leaf="">END</span></span>
+        <span style="height:2px;width:60px;background:linear-gradient(to left,transparent,#DC2626);margin-left:12px;"><span leaf=""><br></span></span>
+      </section>
+    </section>
+  </section>
+
+  <!-- 尾部签名区（组件16，作者占位） -->
+  <section style="padding:0 10px;">
+    <p style="margin-bottom:20px;font-size:15px;line-height:1.8;text-align:justify;">
+      <span leaf="">我是 {{作者名}}，{{一句话简介，如：热衷于分享 AI 与开源赛事的观察与实操}}。</span>
+    </p>
+    <p style="margin-bottom:20px;font-size:15px;line-height:1.8;text-align:justify;">
+      <span leaf="">如果你觉得今天这篇有收获，欢迎</span>
+      <strong style="color:#DC2626;"><span leaf="">点赞、在看、转发</span></strong>
+      <span leaf="">三连，我们下篇见。</span>
+    </p>
+  </section>
+
+</section>
+  </div>
+</div>
+<script>
+  function gzhShowToast(msg){
+    var t=document.getElementById('gzhToast');
+    t.textContent=msg;t.classList.add('show');
+    clearTimeout(t._timer);
+    t._timer=setTimeout(function(){t.classList.remove('show');},2800);
+  }
+  function gzhCopy(){
+    var el=document.getElementById('gzh-content');
+    // 选中渲染后的富文本节点并复制（等价于手动 Ctrl+A / Ctrl+C，保留全部样式）
+    var range=document.createRange();
+    range.selectNodeContents(el);
+    var sel=window.getSelection();
+    sel.removeAllRanges();
+    sel.addRange(range);
+    var ok=false;
+    try{ok=document.execCommand('copy');}catch(e){ok=false;}
+    sel.removeAllRanges();
+    var btn=document.getElementById('gzhCopyBtn');
+    if(ok){
+      gzhShowToast('✅ 已复制！去公众号编辑器按 Ctrl/⌘+V 粘贴即可');
+      var old=btn.textContent;btn.textContent='✅ 已复制';
+      setTimeout(function(){btn.textContent=old;},2200);
+    }else{
+      gzhShowToast('⚠ 自动复制失败，请手动全选(Ctrl/⌘+A)再复制(Ctrl/⌘+C)');
+    }
+  }
+</script>
+</body>
+</html>
