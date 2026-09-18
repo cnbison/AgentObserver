@@ -172,7 +172,7 @@ Co-Authored-By: Claude <noreply@anthropic.com>
   - §11 局限与下一步 + 附录 A 关键文件交叉索引 + 附录 B 评分契约快照
 - 更新 `README.md`：仓库结构图加入新文档；阅读路径表加 #5 进阶必读项
 
-**Commit**: <pending>
+**Commit**: 018b2aa
 
 ### 2026-09-17 · 新增 GOSIM 推广 PDF 与官方 starter kit 源码
 
