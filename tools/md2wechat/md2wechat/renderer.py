@@ -136,6 +136,7 @@ def build_renderer(theme: Theme) -> MarkdownIt:
     覆盖 17 个 token 类型；其余 token 走 markdown-it 默认。
     """
     md = MarkdownIt("commonmark", {"html": True, "linkify": True, "typographer": False})
+    md.enable(["table", "strikethrough"])
 
     # ----- 块级：标题 -----
     md.add_render_rule(
