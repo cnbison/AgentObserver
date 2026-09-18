@@ -156,6 +156,24 @@ Co-Authored-By: Claude <noreply@anthropic.com>
 
 ## 7. 近期变更
 
+### 2026-09-17 · 新增 starter-kit 深度分析文档
+
+- 新增 `agent-observer-starter-kit-ANALYSIS.md`（≈ 400 行）：源码级拆解，11 节
+  - §1 仓库结构与代码地图
+  - §2 协议层 `participant-agent-protocol-v1`（JSON-Lines + 时间安全 + 校验链）
+  - §3 评分层 `challenge-score-v3`（质量带、终局惩罚、临时请求）
+  - §4 仿真层（observing_calendar / tile_geometry / weather_simulator / observation_request_simulator）
+  - §5 Agent 流水线 LangGraph `prepare → invoke_model → finalize`
+  - §6 评测主循环 `ChallengeWorkflow.run` 6 步
+  - §7 策略空间与瓶颈分析 + 进阶方向 7 个表
+  - §8 本地 vs 平台 5 个差异点
+  - §9 给参赛者的 7 条具体建议
+  - §10 一句话架构图
+  - §11 局限与下一步 + 附录 A 关键文件交叉索引 + 附录 B 评分契约快照
+- 更新 `README.md`：仓库结构图加入新文档；阅读路径表加 #5 进阶必读项
+
+**Commit**: <pending>
+
 ### 2026-09-17 · 新增 GOSIM 推广 PDF 与官方 starter kit 源码
 
 - 新增 `.gitignore`：排除 `.DS_Store`、`run_output/`、`demo_week_output/`、`**/scratch/`、`__pycache__/`、IDE 配置等

@@ -14,6 +14,7 @@
 | 2 | [references/survey26_brief.md](references/survey26_brief.md) | **赛题简报** —— 8 章完整解释：为什么 / 观测员职责 / 挑战赛制 / 规划尺度 / 参赛任务 / 计分 / 名词 / 时间线 |
 | 3 | [references/survey26_start.md](references/survey26_start.md) | **新手上路** —— 6 步 + 卡住了速查表：注册 → 建队 → 下载入门包 → 改 `choose_action` → 上传 → 看分 |
 | 4 | [references/survey26_rules.md](references/survey26_rules.md) | **比赛规则与评分** —— 9 节：资格 / 阶段 / 提交 / 平台运行 / **评分公式 (`challenge-score-v3`)** / 排名 / 奖项 / 准则 / 隐私 |
+| 5 | [agent-observer-starter-kit-ANALYSIS.md](agent-observer-starter-kit-ANALYSIS.md) | **入门包源码深度分析** —— 协议 / 评分 / 仿真 / Agent 流水线 / 策略空间 / 7 条参赛建议（**进阶必读**） |
 
 > 💡 **推荐阅读顺序**：`survey26.md`（总览）→ `survey26_brief.md`（理解赛题）→ `survey26_start.md`（动手做）→ `survey26_rules.md`（核对细节）。
 
@@ -36,6 +37,7 @@ AgentObserver/
 │   ├── copy-bank.md             ← 文案库
 │   ├── video-scripts.md         ← 视频脚本
 │   └── production-workflow.md   ← 制作流程 SOP
+├── agent-observer-starter-kit-ANALYSIS.md ← ★ starter-kit 源码级深度拆解（11 节）
 └── assets/
     └── agent-observer/          ← GOSIM Agent Observer 公开素材
         ├── gosim-logo.svg
