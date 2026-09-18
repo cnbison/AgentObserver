@@ -173,6 +173,23 @@ Co-Authored-By: Claude <noreply@anthropic.com>
 
 ## 7. 近期变更
 
+### 2026-09-18 · 将 Factory 兄弟赛事 HTML 转 md 并优化显示
+
+- 新增 `marketing/gosim_factory_hackathon_intro.md`（11828 字节 / 6 节 + 附录 A–D）
+  - 文首中文摘要 + TOC + §1–§6 一级标题
+  - §1 国际化舞台 / §2 关于赛事 / §3 三大核心原则 / §4 六周赛程（GFM 表格）
+  - §5 你能获得什么（4 福利 GFM 表格）/ §6 即刻报名
+  - 附录 A：同期 GOSIM Shenzhen 2026 大会信息 + 3 条入口链接
+  - 附录 B：限时早鸟观众票福利（8.24–8.26）
+  - 附录 C：兄弟赛事速览（Factory + Agent Observer 互链）
+  - 附录 D：4 张图片版权与署名
+- 新增 `assets/sibling-factory/`：4 张图全下载到本地
+  - factory-img-01.jpg（2.6 KB 报名二维码）/ 02.jpg（178 KB 大会主视觉）
+  - factory-img-03.jpg（72 KB 早鸟海报）/ 04.jpg（80 KB 早鸟二维码）
+  - meta.json 记录图片元信息
+- 关键数据校对（21 项全部命中）：24,000 美元 / 20 奖 / 6 周赛程 / Top 20 晋级 /
+  150+ 讲师 / 2000+ 开发者 / 35 高校 / 48 企业 / 15 城市 / 87 名 / 249 支 / 8.24–8.26 早鸟福利
+
 ### 2026-09-18 · 重写 Agent Observer 推广长文（更醒目标题 + 简明告知）
 
 - 重写 `articles/agent-observer-promo.md`（6796 字节 / 约 1400 中文字）
