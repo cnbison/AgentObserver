@@ -35,6 +35,22 @@ AgentObserver/
 │   ├── copy-bank.md               ← 文案库（30 选题 × 多平台版本）
 │   ├── video-scripts.md           ← 视频脚本（4 类片 + 直播 + Checklist）
 │   └── production-workflow.md     ← 制作流程 SOP + 工具栈
+├── tools/                         ← 内部工具（独立 CLI 包）
+│   └── md2wechat/                 ← Markdown → 微信公众号文章 HTML 转换器
+│       ├── README.md              ← 用法 + 公众号限制清单 + 主题对照表
+│       ├── pyproject.toml         ← 包元数据（依赖 markdown-it-py / pygments / pyyaml）
+│       ├── md2wechat/             ← Python 包源码
+│       │   ├── cli.py             ← argparse CLI（-i / --batch / --list-themes）
+│       │   ├── themes.py          ← 3 套主题预设（sci-tech / science-popular / marketing）
+│       │   ├── renderer.py        ← markdown-it 自定义渲染（18 个 token 类型 + Pygments）
+│       │   ├── converter.py       ← 编排管线（frontmatter 剥离 + 外链图下载 + 渲染）
+│       │   ├── __main__.py        ← python3 -m md2wechat 入口
+│       │   └── __init__.py
+│       └── tests/                 ← pytest 测试（45 passed）
+│           ├── test_themes.py
+│           ├── test_renderer_inline.py
+│           ├── test_cli.py
+│           └── fixtures/sample.md
 └── assets/
     └── agent-observer/            ← GOSIM Agent Observer 公开素材
         ├── gosim-logo.svg
@@ -53,6 +69,7 @@ AgentObserver/
 - 跨文件链接：从 `references/` 出发用 `survey26_xxx.md`（同目录）；从根 `survey26.md` 软链出发同理
 - 素材引用：固定格式 `../assets/agent-observer/<filename>`（所有 md 文件都在 `references/` 或根目录的 `references/` 链接下游）
 - **禁止**使用绝对 URL（如 `https://create.gosim.org/...`）作为内链 —— 仅在外链/CTA/外部资源引用处使用绝对 URL
+- 内部工具放 `tools/<name>/`，与文档代码隔离；命名同 Python 包（避免与 `references/` / `marketing/` 主题命名冲突）
 
 ### 3.2 文档命名
 
@@ -155,6 +172,27 @@ Co-Authored-By: Claude <noreply@anthropic.com>
 ---
 
 ## 7. 近期变更
+
+### 2026-09-18 · 新增 md2wechat 工具（Markdown → 微信公众号文章 HTML）
+
+- 新增 `tools/md2wechat/`：Python 3.10+ 独立 CLI，把项目里的 `.md` 转成可直接粘贴到公众号草稿箱的 HTML
+  - 核心：所有样式强制内联（公众号会剥离 `<style>` / `<link>` / `<script>` 与 `class=`）
+  - 3 套主题预设（与 `marketing/production-workflow.md §4.3` 视觉规范对齐）：
+    - `sci-tech`（默认）：深空蓝 `#18242f` + 暖橙 `#edb28b`
+    - `science-popular`：海军蓝 `#1f4e79` + 沙金 `#f4a261`
+    - `marketing`：大红 `#d62828` + 琥珀 `#fcbf49`
+  - 围栏代码块走 Pygments 内联高亮（剥掉 Pygments 的 `<div class="highlight">` 包装）
+  - 可选 `-d` 下载外链图到本地（避免公众号拦截）
+  - `--batch` 批量转换；`--strict` 用于 CI 严格模式
+  - 修复 markdown-it-py's `add_render_rule` `__get__` 绑定陷阱：所有回调必须 `staticmethod`
+  - 修复 image `alt` 文本从 `token.content`（非 `token.attrs["alt"]`）取
+  - 启用 `md.enable(["table", "strikethrough"])`（commonmark 默认未开）
+- 新增 `marketing/dist/.gitkeep`：`--batch` 默认输出目录占位
+- 新增 45 个 pytest 测试（themes 9 + renderer 19 + cli 10 + 7 个 parametrize），全部通过
+- 真实 e2e：`marketing/gosim_survey_agent_hackathon_intro.md`（496 行中英双语，4 张表 100+ 单元格，8 张图）
+  → 71 KB HTML，**0 个 `class=`**，**0 个 `<style|<link|<script>`**，3 套主题颜色与字号可见差异
+
+**Commit**: b511e2a
 
 ### 2026-09-18 · §1–§16 主标题改为中英双语
 
