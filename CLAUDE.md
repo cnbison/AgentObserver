@@ -173,6 +173,21 @@ Co-Authored-By: Claude <noreply@anthropic.com>
 
 ## 7. 近期变更
 
+### 2026-09-18 · 重写 Agent Observer 推广长文（更醒目标题 + 简明告知）
+
+- 重写 `articles/agent-observer-promo.md`（6796 字节 / 约 1400 中文字）
+  - **标题改为 Factory 同款句式**：`GOSIM Agent Observer 黑客松重磅启动！180 个观测夜，$5,500 奖金池，等你来战！`
+  - **写作重心调整**：从"9 项职责 / 状态字典 / 评分公式 / Python 3.12 沙箱技术细节" → "简明告知：这是什么比赛 / 谁参加 / 给什么 / 怎么开始"
+  - **6 节骨架**：开场白 → 数字速览表 → 赛程表 → 三大原则 → 你能获得什么 → CTA 表
+  - 数字密度提升：每节至少 1 个硬数据点（$5,500 / 6 奖 / 180 夜 / 900 秒 / 12,287 / 50+10 次 / 90 天）
+  - 配图从 9 张减到 3 张（封面 + §03 控制室 + 结尾），聚焦读者注意力
+  - DESI/NASA/Hubble 第三方图片本次未引用，无需署名
+- 同步**替换 references/ 下两份兄弟参考文**为更干净的纯 HTML（mhtml → html）
+  - `GOSIM Shenzhen 2026 智能体软件工厂黑客松重磅启动！...html`（3.6 MB）
+  - `GOSIM Spotlight Shenzhen 2026 全球 AI 项目火热征集中...html`（3.8 MB）
+  - 删除对应两份 `.mhtml`（base64 内嵌图噪音大）
+- 全文 13 项关键事实校对过 `references/` 5 个文档，全部命中
+
 ### 2026-09-18 · 新增 Agent Observer 黑客松推广长文
 
 - 新增 `articles/agent-observer-promo.md`（约 1900 字中文 / 8 张配图 / 6 节骨架）
