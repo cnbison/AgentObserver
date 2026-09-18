@@ -163,7 +163,7 @@ Co-Authored-By: Claude <noreply@anthropic.com>
 - `CLAUDE.md` 历史 changelog（line 215）中提及该 PDF 的条目**保留不动**：按 §6.3 「已有记录按倒序排列，不要删除历史记录（除非确认是错误条目）」，该条目是当时确实添加过的事实记录
 - 全仓检索 `intro_cn` 仅命中：live 引用（已改）+ CLAUDE.md 历史记录（保留）。其余 `intro_cn` 字样均为「video-scripts.md 中文版视频脚本」无关引用
 
-**Commit**: <pending>
+**Commit**: 6645abe
 
 ### 2026-09-18 · GOSIM 简报正文改为中英双语格式
 
