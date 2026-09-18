@@ -15,8 +15,10 @@
 | 3 | [references/survey26_start.md](references/survey26_start.md) | **新手上路** —— 6 步 + 卡住了速查表：注册 → 建队 → 下载入门包 → 改 `choose_action` → 上传 → 看分 |
 | 4 | [references/survey26_rules.md](references/survey26_rules.md) | **比赛规则与评分** —— 9 节：资格 / 阶段 / 提交 / 平台运行 / **评分公式 (`challenge-score-v3`)** / 排名 / 奖项 / 准则 / 隐私 |
 | 5 | [agent-observer-starter-kit-ANALYSIS.md](agent-observer-starter-kit-ANALYSIS.md) | **入门包源码深度分析** —— 协议 / 评分 / 仿真 / Agent 流水线 / 策略空间 / 7 条参赛建议（**进阶必读**） |
+| 6 | [articles/agent-observer-promo.md](articles/agent-observer-promo.md) | **Agent Observer 黑客松推广长文** —— 1800 字 / 8 配图 / 对标兄弟赛事版本风格，可直接送 `gzh-design` 排版 |
 
 > 💡 **推荐阅读顺序**：`survey26.md`（总览）→ `survey26_brief.md`（理解赛题）→ `survey26_start.md`（动手做）→ `survey26_rules.md`（核对细节）。
+> 📰 **对外宣传**：`articles/agent-observer-promo.md` 是已发布的中文公众号长文稿。
 
 ---
 
@@ -37,6 +39,8 @@ AgentObserver/
 │   ├── copy-bank.md             ← 文案库
 │   ├── video-scripts.md         ← 视频脚本
 │   └── production-workflow.md   ← 制作流程 SOP
+├── articles/                   ← 推广文章（已发布稿件）
+│   └── agent-observer-promo.md ← ★ Agent Observer 黑客松推广长文（约 1900 字 / 8 配图）
 ├── agent-observer-starter-kit-ANALYSIS.md ← ★ starter-kit 源码级深度拆解（11 节）
 └── assets/
     └── agent-observer/          ← GOSIM Agent Observer 公开素材
@@ -50,7 +54,15 @@ AgentObserver/
         ├── survey-night-sky.mp4            ← 主视觉视频
         ├── survey-observed-universe-BvpCJuOC.jpg
         ├── survey-redshift-map-Bal3YYAj.jpg
-        └── survey-review-overlay-BD2bBt4R.jpg
+        ├── survey-review-overlay-BD2bBt4R.jpg
+        ├── fig5.1.png
+        ├── fig8.1.png
+        ├── pdf-fig-1-1-cosmic-web.jpg
+        ├── pdf-fig-1-2-desi-redshift.jpg
+        ├── pdf-fig-10-1-3d-universe.jpg
+        ├── pdf-fig-10-2-review-overlay.jpg
+        ├── pdf-fig-10-3-alpha-sweep.jpg
+        └── pdf-fig-10-4-desi-butterfly.jpg
 ```
 
 ---

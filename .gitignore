@@ -23,3 +23,7 @@ venv/
 # 临时文件
 *.tmp
 *.log
+
+# Claude Code skill：项目级安装默认不入库（AGPL-3.0 强 copyleft）
+# 如需团队共享，请 `git add -f .claude/skills/gzh-design/` 显式跟踪
+.claude/skills/

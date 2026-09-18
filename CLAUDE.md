@@ -173,6 +173,22 @@ Co-Authored-By: Claude <noreply@anthropic.com>
 
 ## 7. 近期变更
 
+### 2026-09-18 · 新增 Agent Observer 黑客松推广长文
+
+- 新增 `articles/agent-observer-promo.md`（约 1900 字中文 / 8 张配图 / 6 节骨架）
+  - 文首中文摘要 + TOC + 英文副标语 *Human judgment · Machine speed · One shared sky*
+  - §1 这场黑客松在做什么（\$5,500 / 6 奖项 / 180 夜 / 900 秒时隙 / 12,287 基线）
+  - §2 为什么难（9 项观测员职责 / 4 维状态字典 / 三层时间尺度 / FIG 8.1 状态字典）
+  - §3 GOSIM 这场有什么不同（开放祛魅 / 公平竞技 / 真实落地 + DESI 5000 万星系借势）
+  - §4 怎么参加（20 分钟跑通基线 / 6 步表 / 练习赛 csv vs 正式赛包 / Alpha 扫描 / 复盘叠加图）
+  - §5 你能获得什么（奖金 + 深圳颁奖曝光 + 完赛证书 + 排行榜 + 90 天数据保留 + 领奖不要求到场）
+  - §6 现在就开始（5 条 bh3gei.github.io 官方入口 CTA 表）
+  - 附录 · 图片版权与署名：DESI Claire Lamman + NASA/Hubble 公共领域 + GOSIM 公开素材
+- 全部 12 项关键事实校对过 `references/` 5 个文档（奖金池 / 奖项数 / 赛程 / 时隙 / 提交限制 / 每日次数 / 队伍规模 / 基线分数 / 评分公式 / Python 3.12 / 领奖要求 / 数据保留 90 天）
+- 配图全部走 `../assets/agent-observer/` 相对路径，**零**外部 CDN 引用
+- 对标兄弟项目推广文风格（学 Agentic Factory 的"赛事化 + 三大原则"骨架 + Spotlight 的"多漏斗 CTA + 降门槛金句"做法）
+- 同步更新 `README.md`：仓库结构图加 `articles/` 目录与新增配图；阅读路径表加 #6 推广文入口
+
 ### 2026-09-18 · 新增 md2wechat 工具（Markdown → 微信公众号文章 HTML）
 
 - 新增 `tools/md2wechat/`：Python 3.10+ 独立 CLI，把项目里的 `.md` 转成可直接粘贴到公众号草稿箱的 HTML
