@@ -167,7 +167,7 @@ Co-Authored-By: Claude <noreply@anthropic.com>
 - 文首说明行更新为「§1–§16 采用中英双语格式」
 - 文件总行数：355 → 496（净增 141 行）
 
-**Commit**: <pending>
+**Commit**: 2c5408f
 
 ### 2026-09-18 · 替换 FIG 5.1 / FIG 8.1 为用户提供的 PNG
 
