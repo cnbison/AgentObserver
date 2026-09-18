@@ -156,6 +156,17 @@ Co-Authored-By: Claude <noreply@anthropic.com>
 
 ## 7. 近期变更
 
+### 2026-09-18 · 替换 FIG 5.1 / FIG 8.1 为用户提供的 PNG
+
+- 新增 `assets/agent-observer/fig5.1.png`（84 KB）与 `fig8.1.png`（107 KB），由用户提供
+- 替换 `marketing/gosim_survey_agent_hackathon_intro.md` 第 162–174 行（FIG 5.1 ASCII → 图）
+- 替换 `marketing/gosim_survey_agent_hackathon_intro.md` 第 221–243 行（FIG 8.1 ASCII → 图）
+- 同步更新：
+  - 文首摘要行（图数从「6 张」改为「8 张」）
+  - 附录版权表新增 FIG 5.1 与 FIG 8.1 两条记录
+
+**Commit**: <pending>
+
 ### 2026-09-18 · 新增英文参赛者简报 PDF 的 md 整理版
 
 - 新增 `marketing/gosim_survey_agent_hackathon_intro.md`（≈ 380 行 / 16 节 / 6 图）

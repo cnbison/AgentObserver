@@ -6,7 +6,7 @@
 > 渲染引擎：WeasyPrint 69.0
 > 本仓库整理时间：2026-09-18
 
-> **本文保留英文原文**（与官方 PDF 一致），配 6 张配图与版权标注。文首附中文摘要、章节对照，方便中文参赛者定位。
+> **本文保留英文原文**（与官方 PDF 一致），配 8 张配图与版权标注。文首附中文摘要、章节对照，方便中文参赛者定位。
 
 ---
 
@@ -160,18 +160,8 @@ This document describes the challenge design and the reasoning concept behind it
 Evaluation fixes one shared scenario — the overall survey plan, the per-night seeing and weather replay, ad-hoc observing requests, and predictable mid-term disruptions such as rain, forest fire smoke plumes or scheduled rocket launches — together with a single scoring rule. Working from this information, the agent produces the next observing plan every 900 seconds.
 
 > **FIG 5.1** — The data flow: fixed inputs feed the agent state, the reasoning agent returns an action, the simulator updates fast metrics, the run yields final metrics and a complete audit log.
->
-> > ⚠️ 原 PDF 中此图是文本/方框流程图（WeasyPrint 渲染的矢量图），本 md 用下面的 ASCII 流程图保留其内容。原 PDF 标签 = 数据流图，**与 §10 的 FIG 10.1–10.4 配图无关**。
 
-**图说（FIG 5.1）**：
-
-```
-Fixed inputs → Agent state → Reasoning agent → Action → Fast update → Final metrics → Audit log
-  science goal    weather + forecast   rank choices   observe(tile_id)   donefrac gain    score        chosen action
-  footprint tiles  survey progress    explain reason  or wait          effective targets  target yield  reason string
-  weather replay   available tiles    return action                     waste/violations  uniformity/waste  risk notes
-                                                                                                            next slot
-```
+![FIG 5.1 — The data flow: fixed inputs feed the agent state, the reasoning agent returns an action, the simulator updates fast metrics, the run yields final metrics and a complete audit log.](../assets/agent-observer/fig5.1.png)
 
 ---
 
@@ -219,28 +209,8 @@ In the hackathon, we demand **a full trace logging**: the project must save the 
 Every slot, the agent should be provided with information about **four aspects** — weather, forecast, progress, and available tiles. The agent weighs all four together rather than reacting to any one of them alone. The diagram below shows how these inputs are structured.
 
 > **FIG 8.1** — The content dictionary is small enough for non-astronomers to inspect and reason about. The **donefrac** here refers to survey completion of each single tile: 0 means just started, 1 means complete.
->
-> > ⚠️ 原 PDF 中此图是文本/方框示意图（WeasyPrint 渲染的矢量图），本 md 用下面的 ASCII 树状图保留其内容。原 PDF 标签 = 内容字典结构图，**与 §10 的 FIG 10.4 蝴蝶图无关**。
 
-**图说（FIG 8.1）**：
-
-```
-weather                 forecast                progress                 available_tiles
-seeing: lower sharper   current + 4 future     completed_tiles           tile_id to return
-transparency: clearer   same weather fields      mean_donefrac            target counts
-sky: lower darker       lets agent reason        region_completion        airmass + priority
-program: DARK/...       about wait               wasted_time_seconds      expected gains
-speed: fast yield       or save for better sky   constraint_violations    expected waste
-                              │                        │                         │
-                              └───────────── agent decision ────────────────────┘
-                                              ▼
-                                   choose one tile (or wait)
-                                   write optional reason
-                                              │
-                                              ▼ history row
-                                   action validity · actual gain
-                                   waste · agent_reason
-```
+![FIG 8.1 — The content dictionary is small enough for non-astronomers to inspect and reason about. The donefrac here refers to survey completion of each single tile: 0 means just started, 1 means complete.](../assets/agent-observer/fig8.1.png)
 
 The agent should handle several recurring situations:
 
@@ -376,6 +346,8 @@ Intelligent telescope systems need more than model accuracy. They need to reason
 |---|---|---|
 | FIG 1.1 Cosmic Web | <https://science.nasa.gov/asset/hubble/probing-the-cosmic-web/> | NASA / Hubble（公共领域） |
 | FIG 1.2 DESI 红移图 | <https://desi.lbl.gov/2024/04/04/first-cosmology-results-from-desi> | Claire Lamman / DESI collaboration；cmastro colormap；教育用 |
+| FIG 5.1 数据流图 | GOSIM Agent Observer 官方 PDF（`assets/agent-observer/fig5.1.png`，用户提供） | GOSIM Agent Observer 团队 |
+| FIG 8.1 内容字典 | GOSIM Agent Observer 官方 PDF（`assets/agent-observer/fig8.1.png`，用户提供） | GOSIM Agent Observer 团队 |
 | FIG 10.1 3D 宇宙图 | GOSIM Agent Observer 参考实现 balanced observer | GOSIM Agent Observer 团队 |
 | FIG 10.2 Review overlay | 同上 | 同上 |
 | FIG 10.3 Alpha sweep | 同上 | 同上 |
