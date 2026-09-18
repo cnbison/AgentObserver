@@ -1,12 +1,11 @@
 # GOSIM Hackathon · Open Agent Observer Challenge（参赛者简报）
 
 > 原文 PDF：[`marketing/gosim_survey_agent_hackathon_intro.pdf`](gosim_survey_agent_hackathon_intro.pdf)（A4 / 12 页 / 英文）
-> 中文译版 PDF：[`marketing/gosim_survey_agent_hackathon_intro_cn.pdf`](gosim_survey_agent_hackathon_intro_cn.pdf)（10.8 MB）
 > 出品方：GOSIM · 副标题「A GOSIM Hackathon for Intelligent Survey Operations」
 > 渲染引擎：WeasyPrint 69.0
 > 本仓库整理时间：2026-09-18
 
-> **本文 §1–§16 采用中英双语格式**：英文段落 / 句子在前，中文翻译紧随其后；代码块（如 §7 接口示例、§12 评分公式）和 URL 列表保持英文原文。配 8 张图与版权标注。文首中文摘要、章节对照表仍用纯中文。
+> **本文 §1–§16 采用中英双语格式**（已替代原中文译版 PDF `gosim_survey_agent_hackathon_intro_cn.pdf`，该 PDF 于 2026-09-18 删除）：英文段落 / 句子在前，中文翻译紧随其后；代码块（如 §7 接口示例、§12 评分公式）和 URL 列表保持英文原文。配 8 张图与版权标注。文首中文摘要、章节对照表仍用纯中文。
 
 ---
 
