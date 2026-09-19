@@ -6,6 +6,23 @@
 
 ---
 
+### 2026-09-19 · 新增 promo-02 正式版推广文 + 早期版本归档
+
+- 新增 `articles/agent-observer-promo-02-正式.md`（14915 字节 / 3 张配图）
+  - 用户最终采用的 v2 正式版本，标题：`GOSIM 2026 巡天智能体黑客松正式启动：让 AI 决定望远镜下一步看哪里`
+  - 文首摘要 5 项 emoji 速览：全球开放 / 个人团队均可参加 / $5,500 奖金池 / 6 个现金奖项 / 10 月线上比赛 / 10 月深圳颁奖
+  - 3 张图全部本地化、全部存在：
+    - L9 `survey-agent-strategy-XnSuOIcZ.jpg`（观测智能体把天气、天区与巡天进度权衡成一份观测计划）
+    - L65 `cosmos-control-room-DALcRogD.jpg`（巡天控制室——观测员面对不断变化的天空条件）
+    - L482 `cosmos-observatory-hero-BV_aYwWD.jpg`（观测台主视觉——把镜头指向下一个 900 秒）
+  - 无外部 CDN 引用；图片路径全部走 `../assets/agent-observer/` 相对路径
+- 新增 `articles/bak/agent-observer-promo-02.md`（14915 字节）—— promo-02 早期版本归档（与正式版同字节数，标题相同，作为版本对照保留）
+- 更新 `README.md`
+  - 阅读路径表新增 #9：`articles/agent-observer-promo-02-正式.md`（用户最终采用版本）
+  - 仓库结构图登记 `articles/bak/` 目录与 promo-02-正式.md 条目
+- 校验：3 张图全部存在于 `assets/agent-observer/`，0 个外部 CDN 引用
+- **未做的事**：未对 promo-02-正式.md 排版为公众号 HTML（按用户要求只更新并推送源文件，未排版）
+
 ### 2026-09-18 · 修正红白色系排版 HTML 第一张图（搞混了 promo-01 / promo）
 
 - 修复 `articles/agent-observer-promo-01_排版_红白色系(red-white).html` 第 1 张图错误引用

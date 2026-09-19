@@ -18,6 +18,7 @@
 | 6 | [articles/agent-observer-promo.md](articles/agent-observer-promo.md) | **Agent Observer 黑客松推广长文（Claude 起草版）** —— 1800 字 / 8 配图 / 对标兄弟赛事版本风格，可直接送 `gzh-design` 排版 |
 | 7 | [articles/agent-observer-promo-01.md](articles/agent-observer-promo-01.md) | **Agent Observer 黑客松推广长文（用户手动修正版）** —— 修正标题与开场白；已排版为红白色系公众号 HTML |
 | 8 | [articles/agent-observer-promo-01_排版_红白色系(red-white).html](articles/agent-observer-promo-01_排版_红白色系(red-white).html) | **红白色系公众号 HTML 成品** —— 干净正文，直接粘贴；209 处 `<span leaf>` 包裹，validate_gzh_html.py 校验 0 ERROR |
+| 9 | [articles/agent-observer-promo-02-正式.md](articles/agent-observer-promo-02-正式.md) | **Agent Observer 黑客松推广长文（正式版 v2）** —— 用户最终采用版本，3 张配图，含完整赛题/奖项/赛程/CTA |
 
 > 💡 **推荐阅读顺序**：`survey26.md`（总览）→ `survey26_brief.md`（理解赛题）→ `survey26_start.md`（动手做）→ `survey26_rules.md`（核对细节）。
 > 📰 **对外宣传**：`articles/agent-observer-promo.md` 与 `articles/agent-observer-promo-01.md` 是已发布的中文公众号长文稿，后者已配红白色系排版 HTML。
@@ -47,7 +48,10 @@ AgentObserver/
 │   ├── agent-observer-promo.md                     ← ★ 起草版（约 1900 字 / 8 配图）
 │   ├── agent-observer-promo-01.md                  ← ★ 用户手动修正版
 │   ├── agent-observer-promo-01_排版_红白色系(red-white).html          ← 红白色系公众号 HTML（粘贴用）
-│   └── agent-observer-promo-01_排版_红白色系(red-white)_预览.html    ← 同上 + 复制按钮预览页
+│   ├── agent-observer-promo-01_排版_红白色系(red-white)_预览.html    ← 同上 + 复制按钮预览页
+│   ├── agent-observer-promo-02-正式.md             ← ★ 用户最终采用版本（v2 正式版）
+│   └── bak/
+│       └── agent-observer-promo-02.md              ← 归档：promo-02 早期版本
 ├── agent-observer-starter-kit-ANALYSIS.md ← ★ starter-kit 源码级深度拆解（11 节）
 └── assets/
     └── agent-observer/          ← GOSIM Agent Observer 公开素材
