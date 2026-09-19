@@ -21,7 +21,7 @@
 - 总入库体积 28.9MB（不含 .gitignore 屏蔽项）
 - **不在视频里的素材**：assets/agent-observer/ 下还有 5 张其他图与 1 段主视觉视频（survey-night-sky.mp4），本片按 BRIEF 选用 3 张图；其余资产保留原位不动（CLAUDE.md §3.4「不要修改 assets/agent-observer/ 中的文件名」）
 
-**Commit**: pending
+**Commit**: e7e303a
 
 ### 2026-09-19 · 新增 Guide/OperatingGuide.md（md 转公众号速查）
 
@@ -32,7 +32,7 @@
   - 给出的命令示例直接以 `articles/agent-observer-promo-03-修正.md` 为输入，便于团队成员复用
 - 单独建 `Guide/` 目录而非塞进 `marketing/`，因为这是工作流速查而非营销内容
 
-**Commit**: pending
+**Commit**: e7e303a
 
 ### 2026-09-19 · 新增 promo-03-修正.md 公众号排版 HTML
 
@@ -43,7 +43,7 @@
   - `articles/agent-observer-promo-03-修正-m2w-2.html`（27KB）——marketing 主题变体，记录在 `Guide/OperatingGuide.md` 作为示例命令的输出
 - 未提交：`articles/agent-observer-promo-03-修正-m2w.html` 与 `-m2w-1.html`（sci-tech / science-popular 主题变体，本次仅供挑选主题、未采用）+ `.pdf`（1.7MB，单文件偏大且可由 markdown 重新导出）
 
-**Commit**: pending
+**Commit**: e7e303a
 
 ### 2026-09-19 · 回填两条 2026-09-19 记录的 commit 哈希
 
