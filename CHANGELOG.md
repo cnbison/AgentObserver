@@ -6,6 +6,13 @@
 
 ---
 
+### 2026-09-19 · 回填两条 2026-09-19 记录的 commit 哈希
+
+- 上一条 amend commit 后哈希从 `246b3c2` 变为 `b66a8c2`，把当日两条记录的 `**Commit**` 字段同步更正
+- 为避免再次 amend 造成哈希循环，本回填单独作为一个 commit 落地
+
+**Commit**: 4f0b945
+
 ### 2026-09-19 · 新增 promo-03 修正版推广文（降 AI 味）
 
 - 新增 `articles/agent-observer-promo-03-修正.md`
