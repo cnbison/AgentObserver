@@ -1,0 +1,287 @@
+{
+  "planSha256": "51a5cf83fb714e9253aff796360e5942385f8e97c142c38a70ae0a88eeeb20eb",
+  "music": {
+    "file": "assets/music.wav",
+    "gain": 0.6,
+    "source": "改编自 skill 示例 assets/audio/codepilot-score-example.py（120 BPM / 48s），按本片 50s 重排",
+    "seed": 26,
+    "sha256": "c9f07f21fcf1ab24f4e2d8ee787c571eb3af62d85c500567effdbd6033e30438"
+  },
+  "cues": [
+    {
+      "at": 0,
+      "actionId": "intro-enter",
+      "file": "assets/sfx/whoosh.wav",
+      "gain": 0.6,
+      "role": "sfx",
+      "kind": "whoosh",
+      "sha256": "1e7e24117c5b226510e2e9bb438055f5a84bcb7cc97ca2a5938e8f280937a193"
+    },
+    {
+      "at": 5,
+      "actionId": "shot2-appear",
+      "file": "assets/sfx/click.wav",
+      "gain": 0.7,
+      "role": "sfx",
+      "kind": "click",
+      "sha256": "8cb3444a4ab4640a7417dcb539a556bd10c697b19869c17c3d4289a4c1eebc13"
+    },
+    {
+      "at": 11,
+      "actionId": "shot3-appear",
+      "file": "assets/sfx/click.wav",
+      "gain": 0.7,
+      "role": "sfx",
+      "kind": "click",
+      "sha256": "8cb3444a4ab4640a7417dcb539a556bd10c697b19869c17c3d4289a4c1eebc13"
+    },
+    {
+      "at": 18,
+      "actionId": "shot4-appear",
+      "file": "assets/sfx/pop.wav",
+      "gain": 0.7,
+      "role": "sfx",
+      "kind": "pop",
+      "sha256": "ea11b896eb402c995a63f01ff298f0def88deed0ce96d37eb5f52d266b654dc9"
+    },
+    {
+      "at": 24,
+      "actionId": "shot5-appear",
+      "file": "assets/sfx/click.wav",
+      "gain": 0.7,
+      "role": "sfx",
+      "kind": "click",
+      "sha256": "8cb3444a4ab4640a7417dcb539a556bd10c697b19869c17c3d4289a4c1eebc13"
+    },
+    {
+      "at": 30,
+      "actionId": "shot6-appear",
+      "file": "assets/sfx/click.wav",
+      "gain": 0.7,
+      "role": "sfx",
+      "kind": "click",
+      "sha256": "8cb3444a4ab4640a7417dcb539a556bd10c697b19869c17c3d4289a4c1eebc13"
+    },
+    {
+      "at": 35,
+      "actionId": "shot7-appear",
+      "file": "assets/sfx/ding-dong.wav",
+      "gain": 0.7,
+      "role": "sfx",
+      "kind": "ding-dong",
+      "sha256": "57e3aa7d7001b2320bcdf05eb036b4e320ede132b48703518e46db5933f18399"
+    },
+    {
+      "at": 41,
+      "actionId": "shot8-appear",
+      "file": "assets/sfx/click.wav",
+      "gain": 0.7,
+      "role": "sfx",
+      "kind": "click",
+      "sha256": "8cb3444a4ab4640a7417dcb539a556bd10c697b19869c17c3d4289a4c1eebc13"
+    },
+    {
+      "at": 46,
+      "actionId": "shot9-appear",
+      "file": "assets/sfx/ding-dong.wav",
+      "gain": 0.7,
+      "role": "sfx",
+      "kind": "ding-dong",
+      "sha256": "57e3aa7d7001b2320bcdf05eb036b4e320ede132b48703518e46db5933f18399"
+    }
+  ],
+  "master": {
+    "file": "assets/master.wav",
+    "sha256": "baa2b823aa8f93058068d93c5c265f370334b256c4b86fac9291b0dc54f79c48"
+  },
+  "sfxStem": {
+    "file": "assets/sfx-stem.wav",
+    "sha256": "fd476defbb7f095f1caa4ad5bc622f0bbae04f77b33f7badecfb17f75b152fb2"
+  },
+  "musicStem": {
+    "file": "assets/music-ducked.wav",
+    "sha256": "e962f9f4eb801ea439b2b43d3efd592e7f78e3fa2e5bad2d0b31d2dae258f463"
+  },
+  "ducking": {
+    "method": "cue-envelope",
+    "windows": [
+      {
+        "actionId": "intro-enter",
+        "kind": "whoosh",
+        "start": 0,
+        "attackEnd": 0,
+        "holdEnd": 0.16,
+        "end": 0.45999999999999996,
+        "db": 4
+      },
+      {
+        "actionId": "shot2-appear",
+        "kind": "click",
+        "start": 4.96,
+        "attackEnd": 5,
+        "holdEnd": 5.1,
+        "end": 5.3,
+        "db": 3
+      },
+      {
+        "actionId": "shot3-appear",
+        "kind": "click",
+        "start": 10.96,
+        "attackEnd": 11,
+        "holdEnd": 11.1,
+        "end": 11.299999999999999,
+        "db": 3
+      },
+      {
+        "actionId": "shot4-appear",
+        "kind": "pop",
+        "start": 17.96,
+        "attackEnd": 18,
+        "holdEnd": 18.12,
+        "end": 18.36,
+        "db": 3.5
+      },
+      {
+        "actionId": "shot5-appear",
+        "kind": "click",
+        "start": 23.96,
+        "attackEnd": 24,
+        "holdEnd": 24.1,
+        "end": 24.3,
+        "db": 3
+      },
+      {
+        "actionId": "shot6-appear",
+        "kind": "click",
+        "start": 29.96,
+        "attackEnd": 30,
+        "holdEnd": 30.1,
+        "end": 30.3,
+        "db": 3
+      },
+      {
+        "actionId": "shot7-appear",
+        "kind": "ding-dong",
+        "start": 34.96,
+        "attackEnd": 35,
+        "holdEnd": 35.45,
+        "end": 35.85,
+        "db": 6
+      },
+      {
+        "actionId": "shot8-appear",
+        "kind": "click",
+        "start": 40.96,
+        "attackEnd": 41,
+        "holdEnd": 41.1,
+        "end": 41.300000000000004,
+        "db": 3
+      },
+      {
+        "actionId": "shot9-appear",
+        "kind": "ding-dong",
+        "start": 45.96,
+        "attackEnd": 46,
+        "holdEnd": 46.45,
+        "end": 46.85,
+        "db": 6
+      }
+    ],
+    "overlap": "deepest-envelope-wins"
+  },
+  "timing": [
+    {
+      "actionId": "intro-enter",
+      "fileStart": 0,
+      "audibleLandmark": 0,
+      "actionTime": 0.0,
+      "errorFrames": 0.0
+    },
+    {
+      "actionId": "shot2-appear",
+      "fileStart": 5,
+      "audibleLandmark": 5,
+      "actionTime": 5.0,
+      "errorFrames": 0.0
+    },
+    {
+      "actionId": "shot3-appear",
+      "fileStart": 11,
+      "audibleLandmark": 11,
+      "actionTime": 11.0,
+      "errorFrames": 0.0
+    },
+    {
+      "actionId": "shot4-appear",
+      "fileStart": 18,
+      "audibleLandmark": 18,
+      "actionTime": 18.0,
+      "errorFrames": 0.0
+    },
+    {
+      "actionId": "shot5-appear",
+      "fileStart": 24,
+      "audibleLandmark": 24,
+      "actionTime": 24.0,
+      "errorFrames": 0.0
+    },
+    {
+      "actionId": "shot6-appear",
+      "fileStart": 30,
+      "audibleLandmark": 30,
+      "actionTime": 30.0,
+      "errorFrames": 0.0
+    },
+    {
+      "actionId": "shot7-appear",
+      "fileStart": 35,
+      "audibleLandmark": 35,
+      "actionTime": 35.0,
+      "errorFrames": 0.0
+    },
+    {
+      "actionId": "shot8-appear",
+      "fileStart": 41,
+      "audibleLandmark": 41,
+      "actionTime": 41.0,
+      "errorFrames": 0.0
+    },
+    {
+      "actionId": "shot9-appear",
+      "fileStart": 46,
+      "audibleLandmark": 46,
+      "actionTime": 46.0,
+      "errorFrames": 0.0
+    }
+  ],
+  "warnings": [],
+  "normalization": {
+    "requested": "linear",
+    "normalization_type": "dynamic",
+    "measurement": {
+      "input_i": "-22.05",
+      "input_tp": "-7.13",
+      "input_lra": "1.00",
+      "input_thresh": "-32.07",
+      "output_i": "-16.04",
+      "output_tp": "-1.50",
+      "output_lra": "0.90",
+      "output_thresh": "-26.04",
+      "normalization_type": "dynamic",
+      "target_offset": "0.04"
+    },
+    "output": {
+      "input_i": "-22.05",
+      "input_tp": "-7.13",
+      "input_lra": "1.00",
+      "input_thresh": "-32.07",
+      "output_i": "-16.00",
+      "output_tp": "-1.50",
+      "output_lra": "0.90",
+      "output_thresh": "-26.00",
+      "normalization_type": "dynamic",
+      "target_offset": "-0.00"
+    }
+  },
+  "listeningStatus": "Not auditioned by script; listen to isolated SFX, final mix and encoded MP4."
+}

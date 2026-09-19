@@ -1,0 +1,152 @@
+<section style="font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', 'Helvetica Neue', sans-serif; max-width: 720px; margin: 0 auto; padding: 20px 16px; color: #1f2937; background: #ffffff; line-height: 1.85;">
+<h1 style="font-size: 24px; font-weight: 700; color: #1f4e79; margin: 30px 0 18px; text-align: center;">GOSIM 2026 巡天智能体黑客松正式启动：让 AI 决定巡天望远镜下一步看哪里</h1>
+<blockquote style="margin: 16px 0; padding: 12px 18px; border-left: 4px solid #f4a261; background: #fef3c7; color: #1f2937; border-radius: 0 6px 6px 0;"><p style="margin: 14px 0; color: #1f2937;"><strong style="font-weight: 700; color: #f4a261;">把夜空的下一步，交给你写的智能体。</strong></p>
+<p style="margin: 14px 0; color: #1f2937;"><strong style="font-weight: 700; color: #f4a261;">GOSIM Agent Observer · 巡天智能体黑客松 2026</strong></p>
+<p style="margin: 14px 0; color: #1f2937;">🌌 全球开放 · 👥 个人/团队均可参加 · 💰 $5,500 奖金池 · 🏆 6 个现金奖项 · 📅 10 月线上比赛 · 📍 10 月深圳颁奖</p>
+</blockquote>
+<p style="margin: 14px 0; color: #1f2937;"><img src="../assets/agent-observer/survey-agent-strategy-XnSuOIcZ.jpg" alt="观测智能体把天气、天区与巡天进度权衡成一份观测计划" style="max-width: 100%; height: auto; display: block; margin: 16px auto; border-radius: 8px;" /></p>
+<hr style="border: none; border-top: 2px dashed #d1d5db; margin: 24px 0;" /><h2 style="font-size: 20px; font-weight: 700; color: #1f4e79; margin: 24px 0 12px; border-bottom: 2px solid #f4a261; padding-bottom: 4px;">先用一分钟，认识这场比赛</h2>
+<p style="margin: 14px 0; color: #1f2937;">如果有一天，望远镜不再只是执行人类写好的观测计划，而是能自己观察天空、理解任务进度，并决定下一步看哪里——会发生什么？</p>
+<p style="margin: 14px 0; color: #1f2937;">这就是 GOSIM Agent Observer（巡天智能体）黑客松 2026 想让开发者亲手挑战的问题。比赛给出的入口很具体：给你的智能体一个巡天任务、一片天空和不断变化的天气，每隔 900 秒让它决定下一步观测什么。</p>
+<p style="margin: 14px 0; color: #1f2937;">你不需要拥有望远镜，也不需要先成为天文学家。主办方提供统一的巡天任务、模拟环境、开发工具和评测规则；你要做的是设计一个会观察、会判断、会行动、也会根据环境变化调整策略的智能体。</p>
+<p style="margin: 14px 0; color: #1f2937;">同一套规则、同一套评测场景，最后比的是：你的智能体，能把这场巡天任务完成得怎么样？</p>
+<hr style="border: none; border-top: 2px dashed #d1d5db; margin: 24px 0;" /><h2 style="font-size: 20px; font-weight: 700; color: #1f4e79; margin: 24px 0 12px; border-bottom: 2px solid #f4a261; padding-bottom: 4px;">01 · 这是一场怎样的比赛？</h2>
+<h3 style="font-size: 18px; font-weight: 700; color: #f4a261; margin: 20px 0 10px;">让 AI 当一晚&quot;主值观测员&quot;</h3>
+<p style="margin: 14px 0; color: #1f2937;">现代巡天望远镜不是&quot;对准一个目标，然后拍下来&quot;那么简单。一个观测夜里，天气会变，目标会升落，不同科学任务对观测条件有不同要求；巡天本身还有自己的完成进度、区域覆盖要求和临时观测请求。</p>
+<p style="margin: 14px 0; color: #1f2937;">所以观测员真正要回答的问题不是&quot;现在天上有什么可以看&quot;，而是&quot;在当前条件下，现在看什么最值得&quot;。一个经验丰富的主值观测员，会不断在科学价值、天气条件、目标可见性、巡天进度和时间成本之间做权衡。</p>
+<p style="margin: 14px 0; color: #1f2937;">Agent Observer 把这种权衡收敛成一个清晰的 AI 任务：读取当前状态 → 理解局势 → 比较候选 → 做出观测决策 → 环境继续变化 → 再次决策。每个决策时隙是 900 秒，也就是 15 分钟。你设计的不是一个只回答一次问题的 AI，而是一个在连续环境中持续做决定的观测智能体。</p>
+<p style="margin: 14px 0; color: #1f2937;"><img src="../assets/agent-observer/cosmos-control-room-DALcRogD.jpg" alt="巡天控制室——观测员面对不断变化的天空条件" style="max-width: 100%; height: auto; display: block; margin: 16px auto; border-radius: 8px;" /></p>
+<hr style="border: none; border-top: 2px dashed #d1d5db; margin: 24px 0;" /><h2 style="font-size: 20px; font-weight: 700; color: #1f4e79; margin: 24px 0 12px; border-bottom: 2px solid #f4a261; padding-bottom: 4px;">02 · 为什么让 AI 来做这件事？</h2>
+<p style="margin: 14px 0; color: #1f2937;">Agent 的真正挑战在于&quot;会持续决策&quot;，而不仅仅是&quot;会回答&quot;。过去我们让 AI 回答问题、写代码、生成内容、调用工具，这些任务大多是孤立的；可一旦 AI 进入真实世界，它面对的就往往是一个持续变化的环境——今天的选择会改变明天的状态，现在省下的时间可能换来下一次更好的机会，一次错误判断也可能让后续计划越来越困难。</p>
+<p style="margin: 14px 0; color: #1f2937;">巡天观测正好是这样一个干净的实验场。它同时具备几样东西：</p>
+<ul style="margin: 14px 0; padding-left: 28px;"><li style="margin: 8px 0; color: #1f2937;"><p style="margin: 14px 0; color: #1f2937;"><strong style="font-weight: 700; color: #f4a261;">不确定性</strong>：天气和观测条件会变；</li>
+<li style="margin: 8px 0; color: #1f2937;"><p style="margin: 14px 0; color: #1f2937;"><strong style="font-weight: 700; color: #f4a261;">有限资源</strong>：每一个 900 秒的时隙都不可逆；</li>
+<li style="margin: 8px 0; color: #1f2937;"><p style="margin: 14px 0; color: #1f2937;"><strong style="font-weight: 700; color: #f4a261;">长期目标</strong>：整个巡天任务需要持续推进；</li>
+<li style="margin: 8px 0; color: #1f2937;"><p style="margin: 14px 0; color: #1f2937;"><strong style="font-weight: 700; color: #f4a261;">多目标权衡</strong>：科学价值、优先级和覆盖之间经常打架；</li>
+<li style="margin: 8px 0; color: #1f2937;"><p style="margin: 14px 0; color: #1f2937;"><strong style="font-weight: 700; color: #f4a261;">连续决策</strong>：每一个动作都会影响后续状态；</li>
+<li style="margin: 8px 0; color: #1f2937;"><p style="margin: 14px 0; color: #1f2937;"><strong style="font-weight: 700; color: #f4a261;">可量化结果</strong>：最终观测产出可以被统一打分。</li>
+</ul>
+<p style="margin: 14px 0; color: #1f2937;">所以 Agent Observer 真正让你挑战的就是一个问题：在不断变化的世界里，一个智能体能不能持续做出合理的下一步决定？巡天只是场景，连续决策才是核心。</p>
+<hr style="border: none; border-top: 2px dashed #d1d5db; margin: 24px 0;" /><h2 style="font-size: 20px; font-weight: 700; color: #1f4e79; margin: 24px 0 12px; border-bottom: 2px solid #f4a261; padding-bottom: 4px;">03 · 你到底要做什么？</h2>
+<h3 style="font-size: 18px; font-weight: 700; color: #f4a261; margin: 20px 0 10px;">给你的智能体一个&quot;观测员&quot;的位置</h3>
+<p style="margin: 14px 0; color: #1f2937;">比赛提供一套统一的巡天任务和模拟环境。在每个决策时隙，你的智能体都会拿到与当前决策相关的一组信息——当前天气与观测条件、已发布的天气预报、当前巡天任务的完成进度、当前可观测的候选天区，以及不同观测项目的要求——然后它需要决定下一步做什么。</p>
+<p style="margin: 14px 0; color: #1f2937;">你的策略可以很简单，也可以逐渐复杂。可以从规则、排序和启发式方法起步，也可以再叠加记忆、预测、优化算法或大模型，让 Agent 自己处理更复杂的决策。比赛不限定技术路线，看的是你在统一评测环境里能不能做出更有效、更稳健的连续决策。</p>
+<hr style="border: none; border-top: 2px dashed #d1d5db; margin: 24px 0;" /><h2 style="font-size: 20px; font-weight: 700; color: #1f4e79; margin: 24px 0 12px; border-bottom: 2px solid #f4a261; padding-bottom: 4px;">04 · 这场比赛有什么特别？</h2>
+<h3 style="font-size: 18px; font-weight: 700; color: #f4a261; margin: 20px 0 10px;">① 来自真实科学问题，而不是科幻设定</h3>
+<p style="margin: 14px 0; color: #1f2937;">赛题参考 DESI 等真实巡天任务的公开科学与运行设计，再通过模拟器把复杂决策转化成开发者可以参与的挑战。你不会控制真实望远镜，也不会影响真实科学观测，但你面对的是一个有真实任务逻辑的决策环境：天气、时间、目标、任务和巡天进度彼此牵制。这让它既是一场黑客松，也是一次 AI for Science 的决策实验。</p>
+<h3 style="font-size: 18px; font-weight: 700; color: #f4a261; margin: 20px 0 10px;">② 让 Agent 真正&quot;跑起来&quot;，而不是只交一个 Demo</h3>
+<p style="margin: 14px 0; color: #1f2937;">很多 AI 黑客松最后展示的是一个漂亮的 Demo；Agent Observer 把重点放在让你的智能体真正运行一整个模拟巡天任务。一个策略不能只在某一刻看起来聪明，它需要在一整夜里连续面对变化的环境，并让整个巡天任务的结果尽可能更好。你可以反复跑：运行 → 观察结果 → 找到问题 → 修改策略 → 再运行。每跑一次，你的智能体都会进化一点。</p>
+<h3 style="font-size: 18px; font-weight: 700; color: #f4a261; margin: 20px 0 10px;">③ 所有人面对统一的评测环境</h3>
+<p style="margin: 14px 0; color: #1f2937;">比赛提供统一的任务定义、模拟器和评分体系。正式比赛中，智能体面对的天气、预报和事件不会提前下载给参赛者，你需要根据当下能拿到的信息做决定，而不是提前知道未来的&quot;正确答案&quot;。开发场景和正式评测场景分开，比赛想看的是策略面对新场景时的表现，而不是针对一份已知天气回放去调参。</p>
+<h3 style="font-size: 18px; font-weight: 700; color: #f4a261; margin: 20px 0 10px;">④ 结果能被看见，也能被复盘</h3>
+<p style="margin: 14px 0; color: #1f2937;">一次运行结束后你不只是拿到一个分数，平台还会给出分数分解、逐夜运行结果、决策记录、运行日志，以及观测结果的可视化。你可以清楚看到自己的智能体看了哪里、错过了什么、浪费了什么，以及为什么会得到这个结果。</p>
+<hr style="border: none; border-top: 2px dashed #d1d5db; margin: 24px 0;" /><h2 style="font-size: 20px; font-weight: 700; color: #1f4e79; margin: 24px 0 12px; border-bottom: 2px solid #f4a261; padding-bottom: 4px;">05 · 谁适合参加？</h2>
+<h3 style="font-size: 18px; font-weight: 700; color: #f4a261; margin: 20px 0 10px;">不需要天文学背景</h3>
+<p style="margin: 14px 0; color: #1f2937;">这是我们特别想强调的一点：你不需要先成为天文学家才能参加 Agent Observer。赛事面向全球开放，个人和团队均可参加，每队 1–8 人。</p>
+<ul style="margin: 14px 0; padding-left: 28px;"><li style="margin: 8px 0; color: #1f2937;"><p style="margin: 14px 0; color: #1f2937;">🤖 <strong style="font-weight: 700; color: #f4a261;">AI / Agent 开发者</strong>：如果你正在做 Agent、工作流、规划、记忆、多智能体或 LLM 应用，这里有一个非常具体的环境，能把 Agent 从&quot;聊天&quot;推进到&quot;连续决策&quot;。</li>
+<li style="margin: 8px 0; color: #1f2937;"><p style="margin: 14px 0; color: #1f2937;">💻 <strong style="font-weight: 700; color: #f4a261;">Python 开发者</strong>：如果你喜欢算法、工程实践和策略优化，可以从一个简单策略起步，再不断提高分数。</li>
+<li style="margin: 8px 0; color: #1f2937;"><p style="margin: 14px 0; color: #1f2937;">🌌 <strong style="font-weight: 700; color: #f4a261;">天文 / AI for Science 爱好者</strong>：如果你对宇宙、望远镜、科学计算或 AI for Science 感兴趣，这是一个把科学问题变成 Agent 挑战的机会。</li>
+<li style="margin: 8px 0; color: #1f2937;"><p style="margin: 14px 0; color: #1f2937;">🎓 <strong style="font-weight: 700; color: #f4a261;">学生和初学者</strong>：没有丰富的 Agent 经验也没关系，赛事提供入门工具包和线上培训，你可以先跑通基线，再一点一点改自己的策略。</li>
+<li style="margin: 8px 0; color: #1f2937;"><p style="margin: 14px 0; color: #1f2937;">🧠 <strong style="font-weight: 700; color: #f4a261;">喜欢复杂决策问题的人</strong>：如果你的兴趣是&quot;在有限资源和不断变化的环境里，下一步到底怎么选&quot;，这道题本身就值得挑战。</li>
+</ul>
+<hr style="border: none; border-top: 2px dashed #d1d5db; margin: 24px 0;" /><h2 style="font-size: 20px; font-weight: 700; color: #1f4e79; margin: 24px 0 12px; border-bottom: 2px solid #f4a261; padding-bottom: 4px;">06 · 参赛需要什么？</h2>
+<h3 style="font-size: 18px; font-weight: 700; color: #f4a261; margin: 20px 0 10px;">一台电脑 + Python + 一个想法</h3>
+<p style="margin: 14px 0; color: #1f2937;">你不需要：一台望远镜、天文专业背景、昂贵的硬件，或一套复杂的本地基础设施。</p>
+<p style="margin: 14px 0; color: #1f2937;">官方会提供：巡天任务定义、模拟环境、开发工具包、公开开发场景、统一评测平台、比赛规则与评分说明，以及线上培训和答疑。正式比赛使用 Python 3.12 环境。</p>
+<p style="margin: 14px 0; color: #1f2937;">第一次参赛，可以先从官方基线开始。入门包已经准备好了基本运行流程，你先让它跑起来，再开始改变自己的观测策略。</p>
+<hr style="border: none; border-top: 2px dashed #d1d5db; margin: 24px 0;" /><h2 style="font-size: 20px; font-weight: 700; color: #1f4e79; margin: 24px 0 12px; border-bottom: 2px solid #f4a261; padding-bottom: 4px;">07 · 你能获得什么？</h2>
+<h3 style="font-size: 18px; font-weight: 700; color: #f4a261; margin: 20px 0 10px;">💰 $5,500 美元奖金池</h3>
+<table style="width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 15px;"><thead><tr><th style="background: #1f4e79; color: #ffffff; padding: 8px 12px; text-align: left; border: 1px solid #d1d5db; font-weight: 600;">奖项</th>
+<th style="background: #1f4e79; color: #ffffff; padding: 8px 12px; text-align: left; border: 1px solid #d1d5db; font-weight: 600;">名额</th>
+<th style="background: #1f4e79; color: #ffffff; padding: 8px 12px; text-align: left; border: 1px solid #d1d5db; font-weight: 600;">单项奖金</th>
+</tr>
+</thead>
+<tbody><tr><td style="padding: 8px 12px; border: 1px solid #d1d5db; color: #1f2937;">🥇 一等奖</td>
+<td style="padding: 8px 12px; border: 1px solid #d1d5db; color: #1f2937;">1</td>
+<td style="padding: 8px 12px; border: 1px solid #d1d5db; color: #1f2937;">$2,000</td>
+</tr>
+<tr><td style="padding: 8px 12px; border: 1px solid #d1d5db; color: #1f2937;">🥈 二等奖</td>
+<td style="padding: 8px 12px; border: 1px solid #d1d5db; color: #1f2937;">2</td>
+<td style="padding: 8px 12px; border: 1px solid #d1d5db; color: #1f2937;">$1,000</td>
+</tr>
+<tr><td style="padding: 8px 12px; border: 1px solid #d1d5db; color: #1f2937;">🥉 三等奖</td>
+<td style="padding: 8px 12px; border: 1px solid #d1d5db; color: #1f2937;">3</td>
+<td style="padding: 8px 12px; border: 1px solid #d1d5db; color: #1f2937;">$500</td>
+</tr>
+</tbody>
+</table>
+<h3 style="font-size: 18px; font-weight: 700; color: #f4a261; margin: 20px 0 10px;">🌍 GOSIM 全球开源 AI 社区舞台</h3>
+<p style="margin: 14px 0; color: #1f2937;">优胜队伍将受邀参加 2026 年 10 月 17 日 GOSIM Shenzhen 颁奖活动，与全球开发者、AI 工程师、开源社区和技术专家当面交流。领奖不要求到场，跨地区参赛者同样可以参与。</p>
+<h3 style="font-size: 18px; font-weight: 700; color: #f4a261; margin: 20px 0 10px;">🏅 完赛与成果展示</h3>
+<p style="margin: 14px 0; color: #1f2937;">赛事为完赛队伍提供官方完赛证书和相关赛事成果记录，优秀作品还有机会通过 GOSIM 社区获得进一步的展示和交流机会。</p>
+<h3 style="font-size: 18px; font-weight: 700; color: #f4a261; margin: 20px 0 10px;">📊 看见自己的 Agent 是怎么工作的</h3>
+<p style="margin: 14px 0; color: #1f2937;">平台提供排行榜、运行结果和决策复盘能力。你可以从一个分数开始追问：我的 Agent 为什么得到这个结果？这对研究 Agent 行为、策略设计和 AI 决策系统本身，是一种非常直接的实验方式。</p>
+<hr style="border: none; border-top: 2px dashed #d1d5db; margin: 24px 0;" /><h2 style="font-size: 20px; font-weight: 700; color: #1f4e79; margin: 24px 0 12px; border-bottom: 2px solid #f4a261; padding-bottom: 4px;">08 · 赛程怎么走？</h2>
+<table style="width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 15px;"><thead><tr><th style="background: #1f4e79; color: #ffffff; padding: 8px 12px; text-align: left; border: 1px solid #d1d5db; font-weight: 600;">阶段</th>
+<th style="background: #1f4e79; color: #ffffff; padding: 8px 12px; text-align: left; border: 1px solid #d1d5db; font-weight: 600;">时间</th>
+<th style="background: #1f4e79; color: #ffffff; padding: 8px 12px; text-align: left; border: 1px solid #d1d5db; font-weight: 600;">形式</th>
+<th style="background: #1f4e79; color: #ffffff; padding: 8px 12px; text-align: left; border: 1px solid #d1d5db; font-weight: 600;">内容</th>
+</tr>
+</thead>
+<tbody><tr><td style="padding: 8px 12px; border: 1px solid #d1d5db; color: #1f2937;">📚 <strong style="font-weight: 700; color: #f4a261;">线上培训</strong></td>
+<td style="padding: 8px 12px; border: 1px solid #d1d5db; color: #1f2937;">10 月 1–4 日</td>
+<td style="padding: 8px 12px; border: 1px solid #d1d5db; color: #1f2937;">线上</td>
+<td style="padding: 8px 12px; border: 1px solid #d1d5db; color: #1f2937;">赛题讲解、工具包培训、入门指导与答疑</td>
+</tr>
+<tr><td style="padding: 8px 12px; border: 1px solid #d1d5db; color: #1f2937;">⚔️ <strong style="font-weight: 700; color: #f4a261;">线上比赛</strong></td>
+<td style="padding: 8px 12px; border: 1px solid #d1d5db; color: #1f2937;">10 月 5–7 日</td>
+<td style="padding: 8px 12px; border: 1px solid #d1d5db; color: #1f2937;">线上</td>
+<td style="padding: 8px 12px; border: 1px solid #d1d5db; color: #1f2937;">提交智能体，参与正式评测与排名</td>
+</tr>
+<tr><td style="padding: 8px 12px; border: 1px solid #d1d5db; color: #1f2937;">🏆 <strong style="font-weight: 700; color: #f4a261;">颁奖</strong></td>
+<td style="padding: 8px 12px; border: 1px solid #d1d5db; color: #1f2937;">10 月 17 日</td>
+<td style="padding: 8px 12px; border: 1px solid #d1d5db; color: #1f2937;">GOSIM 深圳</td>
+<td style="padding: 8px 12px; border: 1px solid #d1d5db; color: #1f2937;">公布最终成绩并举行颁奖活动</td>
+</tr>
+</tbody>
+</table>
+<p style="margin: 14px 0; color: #1f2937;">练习赛已经开放。你可以提前注册、建队、下载入门工具包并跑通自己的第一个策略，不必等正式比赛开始才第一次接触赛题。</p>
+<hr style="border: none; border-top: 2px dashed #d1d5db; margin: 24px 0;" /><h2 style="font-size: 20px; font-weight: 700; color: #1f4e79; margin: 24px 0 12px; border-bottom: 2px solid #f4a261; padding-bottom: 4px;">09 · 从零开始，可以有多简单？</h2>
+<h3 style="font-size: 18px; font-weight: 700; color: #f4a261; margin: 20px 0 10px;">先跑通，再想怎么赢</h3>
+<p style="margin: 14px 0; color: #1f2937;">第一次参加，不用一上来就设计复杂 Agent。最简单的流程是这样的：</p>
+<ol style="margin: 14px 0; padding-left: 28px;"><li style="margin: 8px 0; color: #1f2937;"><p style="margin: 14px 0; color: #1f2937;"><strong style="font-weight: 700; color: #f4a261;">报名</strong>：注册 Agent Observer 比赛平台账号。</li>
+<li style="margin: 8px 0; color: #1f2937;"><p style="margin: 14px 0; color: #1f2937;"><strong style="font-weight: 700; color: #f4a261;">建队</strong>：个人参赛也需要建立队伍，每队最多 8 人。</li>
+<li style="margin: 8px 0; color: #1f2937;"><p style="margin: 14px 0; color: #1f2937;"><strong style="font-weight: 700; color: #f4a261;">下载入门工具包</strong>：跑通官方提供的基线程序，先看到一次完整的巡天结果。</li>
+<li style="margin: 8px 0; color: #1f2937;"><p style="margin: 14px 0; color: #1f2937;"><strong style="font-weight: 700; color: #f4a261;">改你的策略</strong>：从最简单的选择规则开始，让 Agent 尝试不同的观测决策。</li>
+<li style="margin: 8px 0; color: #1f2937;"><p style="margin: 14px 0; color: #1f2937;"><strong style="font-weight: 700; color: #f4a261;">提交评测</strong>：把智能体提交到比赛平台。</li>
+<li style="margin: 8px 0; color: #1f2937;"><p style="margin: 14px 0; color: #1f2937;"><strong style="font-weight: 700; color: #f4a261;">看结果，再改一次</strong>：观察分数、运行结果和决策记录，继续优化。</li>
+</ol>
+<p style="margin: 14px 0; color: #1f2937;">第一次参赛不需要从&quot;完美智能体&quot;开始，能跑起来就已经在比赛里了。</p>
+<hr style="border: none; border-top: 2px dashed #d1d5db; margin: 24px 0;" /><h2 style="font-size: 20px; font-weight: 700; color: #1f4e79; margin: 24px 0 12px; border-bottom: 2px solid #f4a261; padding-bottom: 4px;">10 · 一个值得你思考的问题</h2>
+<p style="margin: 14px 0; color: #1f2937;">跑通第一次之后，可以先不急着追求复杂模型。试着问自己三个问题：</p>
+<p style="margin: 14px 0; color: #1f2937;"><strong style="font-weight: 700; color: #f4a261;">好天气来了，应该把它留给谁？</strong> 是优先观测对天气要求更高的目标，还是先完成那些已经接近完成的天区？</p>
+<p style="margin: 14px 0; color: #1f2937;"><strong style="font-weight: 700; color: #f4a261;">天气马上要变，应该行动还是等待？</strong> 等，可能错过观测机会；马上行动，又可能把更有价值的目标浪费在不好的条件下——什么时候动、什么时候等，本身就是一道题。</p>
+<p style="margin: 14px 0; color: #1f2937;"><strong style="font-weight: 700; color: #f4a261;">你是在做决定，还是只是在执行规则？</strong> 真正有意思的是让 Agent 开始理解：为什么现在应该做这个决定？</p>
+<p style="margin: 14px 0; color: #1f2937;">当你开始想这些问题，你就已经进入了 Agent Observer 的核心。</p>
+<hr style="border: none; border-top: 2px dashed #d1d5db; margin: 24px 0;" /><h2 style="font-size: 20px; font-weight: 700; color: #1f4e79; margin: 24px 0 12px; border-bottom: 2px solid #f4a261; padding-bottom: 4px;">11 · 这不只是一场天文黑客松</h2>
+<p style="margin: 14px 0; color: #1f2937;">Agent Observer 想探索的并不只是&quot;AI 能不能做天文&quot;，它背后更大的问题是：当 AI 进入真实科学工作流，智能体应该如何在复杂环境里持续观察、规划、行动和修正？</p>
+<p style="margin: 14px 0; color: #1f2937;">巡天之所以是一个非常好的实验场，是因为它同时具备这些特征：明确的长期目标、连续的环境状态、有限的资源、不确定性、多目标权衡、连续决策、可量化的结果，以及可以完整复盘的全过程。这些特征同样出现在机器人、能源调度、自动化运维、科学计算以及各种现实世界的 Agent 里。所以你今天写的可能只是一个&quot;巡天智能体&quot;，但你真正在练习的是让 AI 在一个持续变化的世界里做出连续决策。</p>
+<hr style="border: none; border-top: 2px dashed #d1d5db; margin: 24px 0;" /><h2 style="font-size: 20px; font-weight: 700; color: #1f4e79; margin: 24px 0 12px; border-bottom: 2px solid #f4a261; padding-bottom: 4px;">12 · 现在就加入</h2>
+<p style="margin: 14px 0; color: #1f2937;">如果你一直在做 Agent，却还没有一个能让它持续运行、持续决策、持续接收结果反馈的环境；如果你对宇宙、科学计算或 AI for Science 感兴趣，却不知道从哪里开始；如果你只是想看看&quot;我写的 Agent 究竟能不能把一整个巡天任务跑下来&quot;——现在就是一个很好的开始。</p>
+<p style="margin: 14px 0; color: #1f2937;">你不需要先准备一个完美答案，先让你的 Agent 看向第一片天空。</p>
+<hr style="border: none; border-top: 2px dashed #d1d5db; margin: 24px 0;" /><h2 style="font-size: 20px; font-weight: 700; color: #1f4e79; margin: 24px 0 12px; border-bottom: 2px solid #f4a261; padding-bottom: 4px;">🚀 GOSIM Agent Observer · 巡天智能体黑客松 2026</h2>
+<p style="margin: 14px 0; color: #1f2937;">🌌 全球开放<br />
+👥 个人 / 团队均可参加<br />
+🐍 Python 开发<br />
+⏱️ 每 900 秒做一次决策<br />
+💰 $5,500 奖金池<br />
+🏆 6 个现金奖项<br />
+📚 10 月 1–4 日线上培训<br />
+⚔️ 10 月 5–7 日线上比赛<br />
+📍 10 月 17 日 GOSIM 深圳颁奖</p>
+<h3 style="font-size: 18px; font-weight: 700; color: #f4a261; margin: 20px 0 10px;">立即开始</h3>
+<p style="margin: 14px 0; color: #1f2937;"><strong style="font-weight: 700; color: #f4a261;">GOSIM Agent Observer · 巡天智能体黑客松 2026 官网及报名入口：</strong><br />
+<a href="https://create.gosim.org/survey26/" style="color: #1f4e79; text-decoration: underline;">https://create.gosim.org/survey26/</a></p>
+<p style="margin: 14px 0; color: #1f2937;"><strong style="font-weight: 700; color: #f4a261;">GOSIM Shenzhen 2026 官网：</strong><br />
+<a href="https://shenzhen2026.gosim.org/" style="color: #1f4e79; text-decoration: underline;">https://shenzhen2026.gosim.org/</a></p>
+<hr style="border: none; border-top: 2px dashed #d1d5db; margin: 24px 0;" /><p style="margin: 14px 0; color: #1f2937;"><img src="../assets/agent-observer/cosmos-observatory-hero-BV_aYwWD.jpg" alt="观测台主视觉——把镜头指向下一个 900 秒" style="max-width: 100%; height: auto; display: block; margin: 16px auto; border-radius: 8px;" /></p>
+<blockquote style="margin: 16px 0; padding: 12px 18px; border-left: 4px solid #f4a261; background: #fef3c7; color: #1f2937; border-radius: 0 6px 6px 0;"><h1 style="font-size: 24px; font-weight: 700; color: #1f4e79; margin: 30px 0 18px; text-align: center;">把夜空的下一步，交给你写的智能体。</h1>
+<p style="margin: 14px 0; color: #1f2937;"><strong style="font-weight: 700; color: #f4a261;">GOSIM 2026 · Agent Observer</strong></p>
+</blockquote>
+
+</section>

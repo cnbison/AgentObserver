@@ -1,0 +1,66 @@
+{
+  "ready": true,
+  "cached": false,
+  "engine": "browser",
+  "missing": [],
+  "warnings": [],
+  "fingerprint": "18b155ae73f7e9ea9fc12218708c9fa3ab681cf871db9cd8c2585454815f6b69",
+  "details": {
+    "schema": 2,
+    "engine": "browser",
+    "platform": "macOS-15.7.4-arm64-arm-64bit-Mach-O",
+    "versions": {
+      "python": {
+        "path": "/Users/loubicheng/miniconda3/bin/python3",
+        "version": "3.13.5"
+      },
+      "node": {
+        "path": "/usr/local/bin/node",
+        "version": "v22.18.0"
+      },
+      "npm": {
+        "path": "/usr/local/bin/npm",
+        "version": "10.9.3"
+      },
+      "ffmpeg": {
+        "path": "/opt/homebrew/bin/ffmpeg",
+        "version": "ffmpeg version 8.0.1 Copyright (c) 2000-2025 the FFmpeg developers"
+      },
+      "ffprobe": {
+        "path": "/opt/homebrew/bin/ffprobe",
+        "version": "ffprobe version 8.0.1 Copyright (c) 2007-2025 the FFmpeg developers"
+      }
+    },
+    "packages": {
+      "playwright": {
+        "version": "1.63.0",
+        "path": "/Users/loubicheng/project/AgentObserver/videos/agent-observer-promo/node_modules/playwright/package.json"
+      },
+      "esbuild": {
+        "version": "0.28.2",
+        "path": "/Users/loubicheng/project/AgentObserver/videos/agent-observer-promo/node_modules/esbuild/package.json"
+      },
+      "react": {
+        "version": "19.3.0",
+        "path": "/Users/loubicheng/project/AgentObserver/videos/agent-observer-promo/node_modules/react/package.json"
+      },
+      "react-dom": {
+        "version": "19.3.0",
+        "path": "/Users/loubicheng/project/AgentObserver/videos/agent-observer-promo/node_modules/react-dom/package.json"
+      }
+    },
+    "manifests": {
+      "package.json": "d53d7689922518dd4a0e80b6e043abd75fc49fd5aa86c8962247af2679da053f",
+      "package-lock.json": "6a88a81492141c1025619e0615742ea7a87a39f6b64161b120f836a34a56159c"
+    },
+    "browserEnv": {
+      "PLAYWRIGHT_BROWSERS_PATH": null,
+      "HYPERFRAMES_CHROME_PATH": null
+    }
+  },
+  "browser": {
+    "launched": true,
+    "playwrightVersion": "1.63.0"
+  },
+  "next": "Continue; do not load onboarding."
+}

@@ -1,0 +1,205 @@
+{
+  "demo": false,
+  "product": "GOSIM Agent Observer · 巡天智能体黑客松 2026",
+  "style": "default",
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "duration": 50,
+  "repo": null,
+  "audioRequired": true,
+  "sfxRequired": true,
+  "typography": {
+    "mode": "bilingual",
+    "zhFont": "PingFang SC / Noto Sans CJK SC",
+    "enFont": "Georgia",
+    "zhStyle": "sans-serif",
+    "exceptionReason": "输入为 markdown 推广文而非产品代码仓库，按 default 风格包装；中英标题分工由 story-and-copy.md §「标题的中英分工」指定。"
+  },
+  "visualExceptionReason": "输入是 markdown 推广文（articles/agent-observer-promo-03-修正.md），无产品 UI 组件可接入；改用 default 风格包装推广文 3 张实景图 + 关键数字。保留 GOSIM / Agent Observer / 巡天智能体 三处官方表述。",
+  "audioExceptionReason": "按硬约束「完整声音」默认开启；配乐用 skill 示例改编（48s/120 BPM），音效先查 Pixabay，缺项回退内置 WAV。",
+  "audio": {
+    "ducking": { "enabled": true },
+    "music": {
+      "file": "assets/music.wav",
+      "gain": 0.6,
+      "source": "改编自 skill 示例 assets/audio/codepilot-score-example.py（120 BPM / 48s），按本片 50s 重排",
+      "seed": 26
+    },
+    "cues": [
+      {"at": 0, "actionId": "intro-enter", "file": "assets/sfx/whoosh.wav", "gain": 0.6, "role": "sfx", "kind": "whoosh"},
+      {"at": 5, "actionId": "shot2-appear", "file": "assets/sfx/click.wav", "gain": 0.7, "role": "sfx", "kind": "click"},
+      {"at": 11, "actionId": "shot3-appear", "file": "assets/sfx/click.wav", "gain": 0.7, "role": "sfx", "kind": "click"},
+      {"at": 18, "actionId": "shot4-appear", "file": "assets/sfx/pop.wav", "gain": 0.7, "role": "sfx", "kind": "pop"},
+      {"at": 24, "actionId": "shot5-appear", "file": "assets/sfx/click.wav", "gain": 0.7, "role": "sfx", "kind": "click"},
+      {"at": 30, "actionId": "shot6-appear", "file": "assets/sfx/click.wav", "gain": 0.7, "role": "sfx", "kind": "click"},
+      {"at": 35, "actionId": "shot7-appear", "file": "assets/sfx/ding-dong.wav", "gain": 0.7, "role": "sfx", "kind": "ding-dong"},
+      {"at": 41, "actionId": "shot8-appear", "file": "assets/sfx/click.wav", "gain": 0.7, "role": "sfx", "kind": "click"},
+      {"at": 46, "actionId": "shot9-appear", "file": "assets/sfx/ding-dong.wav", "gain": 0.7, "role": "sfx", "kind": "ding-dong"}
+    ]
+  },
+  "shots": [
+    {
+      "id": "intro",
+      "start": 0,
+      "end": 5,
+      "type": "title",
+      "eyebrow": "GOSIM Agent Observer · 巡天智能体黑客松 2026",
+      "headlineEn": "What's next for the sky",
+      "headline": "把夜空的下一步，交给你写的智能体",
+      "plainExplanation": "这次比赛把「AI 决定巡天望远镜下一步看哪里」变成开发者可以亲手挑战的 Agent 任务。",
+      "description": "GOSIM 巡天智能体黑客松 2026 · 10 月线上 · 深圳颁奖",
+      "descriptionAt": 0.5,
+      "claim": true,
+      "source": ["articles/agent-observer-promo-03-修正.md L1"],
+      "component": "FilmVisual/HeroIntro",
+      "actions": [
+        {"id": "intro-enter", "at": 0.0, "action": "copy enters", "soundRequired": true}
+      ]
+    },
+    {
+      "id": "shot2-core",
+      "start": 5,
+      "end": 11,
+      "type": "detail",
+      "eyebrow": "01 · 这是一场怎样的比赛",
+      "headlineEn": "One night at the controls",
+      "headline": "让 AI 当一晚主值观测员",
+      "plainExplanation": "每一晚，望远镜要在天气、目标可见性、巡天进度之间做权衡；Agent Observer 把这个权衡收敛成一个清晰的 AI 任务。",
+      "description": "读取状态 → 理解局势 → 比较候选 → 观测决策 → 环境变化 → 再次决策。",
+      "descriptionAt": 1.0,
+      "claim": true,
+      "source": ["articles/agent-observer-promo-03-修正.md L27–L33"],
+      "component": "FilmVisual/CoreLoop",
+      "actions": [
+        {"id": "shot2-appear", "at": 0.0, "action": "copy enters", "soundRequired": true}
+      ]
+    },
+    {
+      "id": "shot3-decision",
+      "start": 11,
+      "end": 18,
+      "type": "detail",
+      "eyebrow": "02 · 为什么让 AI 来做",
+      "headlineEn": "Decision, every 900 seconds",
+      "headline": "每隔 900 秒，做一次决策",
+      "plainExplanation": "每个决策时隙 15 分钟；智能体要在不确定性、有限资源、多目标权衡之间持续做出下一步决定。",
+      "description": "900 秒 = 15 分钟 / 一整夜 / 一整个巡天任务",
+      "descriptionAt": 1.5,
+      "claim": true,
+      "source": ["articles/agent-observer-promo-03-修正.md L33"],
+      "component": "FilmVisual/DecisionBadge",
+      "actions": [
+        {"id": "shot3-appear", "at": 0.0, "action": "copy enters", "soundRequired": true}
+      ]
+    },
+    {
+      "id": "shot4-prize",
+      "start": 18,
+      "end": 24,
+      "type": "detail",
+      "eyebrow": "03 · 你能获得什么",
+      "headlineEn": "$5,500 · 6 prizes",
+      "headline": "$5,500 奖金池 · 6 个奖项",
+      "plainExplanation": "一等奖 $2,000 · 二等奖 $1,000 × 2 · 三等奖 $500 × 3；优胜队伍受邀到深圳 GOSIM 颁奖。",
+      "description": "🌍 全球开源 AI 社区舞台 · 🏅 完赛证书 · 📊 决策复盘",
+      "descriptionAt": 1.5,
+      "claim": true,
+      "source": ["articles/agent-observer-promo-03-修正.md L116–L120, L280–L283"],
+      "component": "FilmVisual/PrizeBoard",
+      "actions": [
+        {"id": "shot4-appear", "at": 0.0, "action": "copy enters", "soundRequired": true}
+      ]
+    },
+    {
+      "id": "shot5-eligible",
+      "start": 24,
+      "end": 30,
+      "type": "detail",
+      "eyebrow": "04 · 谁适合参加",
+      "headlineEn": "No telescope required",
+      "headline": "不需要天文背景",
+      "plainExplanation": "面向全球个人 / 团队，每队 1–8 人；不需要先成为天文学家。",
+      "description": "🤖 AI / Agent 开发者 · 💻 Python 开发者 · 🌌 天文爱好者 · 🎓 学生 · 🧠 喜欢复杂决策的人",
+      "descriptionAt": 1.5,
+      "claim": true,
+      "source": ["articles/agent-observer-promo-03-修正.md L88–L96"],
+      "component": "FilmVisual/AudienceList",
+      "actions": [
+        {"id": "shot5-appear", "at": 0.0, "action": "copy enters", "soundRequired": true}
+      ]
+    },
+    {
+      "id": "shot6-requirements",
+      "start": 30,
+      "end": 35,
+      "type": "detail",
+      "eyebrow": "05 · 参赛需要什么",
+      "headlineEn": "A laptop + Python",
+      "headline": "一台电脑 + Python + 一个想法",
+      "plainExplanation": "不需要望远镜 / 不需要天文专业背景 / 不需要昂贵硬件。官方提供任务定义、模拟环境、工具包、评测平台与 Python 3.12 环境。",
+      "description": "Python 3.12 · 入门工具包 · 公开开发场景 · 统一评测",
+      "descriptionAt": 1.0,
+      "claim": true,
+      "source": ["articles/agent-observer-promo-03-修正.md L102–L108"],
+      "component": "FilmVisual/Requirements",
+      "actions": [
+        {"id": "shot6-appear", "at": 0.0, "action": "copy enters", "soundRequired": true}
+      ]
+    },
+    {
+      "id": "shot7-schedule",
+      "start": 35,
+      "end": 41,
+      "type": "detail",
+      "eyebrow": "06 · 赛程怎么走",
+      "headlineEn": "Train · Compete · Award",
+      "headline": "10 月线上培训 → 比赛 → 深圳颁奖",
+      "plainExplanation": "10/1–4 线上培训 · 10/5–7 线上比赛 · 10/17 GOSIM 深圳颁奖。练习赛已经开放。",
+      "description": "📚 10/1–4 培训 · ⚔️ 10/5–7 比赛 · 🏆 10/17 颁奖",
+      "descriptionAt": 1.0,
+      "claim": true,
+      "source": ["articles/agent-observer-promo-03-修正.md L138–L142"],
+      "component": "FilmVisual/Schedule",
+      "actions": [
+        {"id": "shot7-appear", "at": 0.0, "action": "copy enters", "soundRequired": true}
+      ]
+    },
+    {
+      "id": "shot8-start",
+      "start": 41,
+      "end": 46,
+      "type": "detail",
+      "eyebrow": "07 · 怎么开始",
+      "headlineEn": "Run a baseline first",
+      "headline": "先跑通，再想怎么赢",
+      "plainExplanation": "报名 → 建队 → 下载入门工具包 → 改策略 → 提交评测 → 看结果再改一次。能跑起来就已经在比赛里了。",
+      "description": "6 步跑通：报名 / 建队 / 下载工具包 / 改策略 / 提交 / 复盘",
+      "descriptionAt": 1.0,
+      "claim": true,
+      "source": ["articles/agent-observer-promo-03-修正.md L150–L161"],
+      "component": "FilmVisual/StartSteps",
+      "actions": [
+        {"id": "shot8-appear", "at": 0.0, "action": "copy enters", "soundRequired": true}
+      ]
+    },
+    {
+      "id": "shot9-cta",
+      "start": 46,
+      "end": 50,
+      "type": "end",
+      "eyebrow": "现在就加入",
+      "headlineEn": "Let your agent look up",
+      "headline": "让 AI 看向第一片天空",
+      "plainExplanation": "你不需要先准备一个完美答案；先让你的 Agent 看向第一片天空。",
+      "description": "create.gosim.org/survey26/",
+      "descriptionAt": 1.0,
+      "claim": true,
+      "source": ["articles/agent-observer-promo-03-修正.md L466–L469"],
+      "component": "FilmVisual/CTA",
+      "actions": [
+        {"id": "shot9-appear", "at": 0.0, "action": "copy enters", "soundRequired": true}
+      ]
+    }
+  ]
+}

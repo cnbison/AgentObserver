@@ -1,0 +1,156 @@
+{
+  "inputs": {
+    "assets/fallback/primitives.jsx": {
+      "bytes": 863,
+      "imports": [
+        {
+          "path": "react",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "react/jsx-runtime",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "src/FilmVisual.jsx": {
+      "bytes": 13039,
+      "imports": [
+        {
+          "path": "react",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "assets/fallback/primitives.jsx",
+          "kind": "import-statement",
+          "original": "../assets/fallback/primitives.jsx"
+        },
+        {
+          "path": "react/jsx-runtime",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "src/presentations.jsx": {
+      "bytes": 357,
+      "imports": [
+        {
+          "path": "react",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "src/FilmVisual.jsx",
+          "kind": "import-statement",
+          "original": "./FilmVisual.jsx"
+        },
+        {
+          "path": "react/jsx-runtime",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "src/film.jsx": {
+      "bytes": 1138,
+      "imports": [
+        {
+          "path": "react",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "react-dom/server",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "src/presentations.jsx",
+          "kind": "import-statement",
+          "original": "./presentations.jsx"
+        },
+        {
+          "path": "react/jsx-runtime",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    }
+  },
+  "outputs": {
+    ".build/film.cjs": {
+      "imports": [
+        {
+          "path": "react",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "react-dom/server",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "react",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "react",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "react",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "react/jsx-runtime",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "react/jsx-runtime",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "react/jsx-runtime",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "react/jsx-runtime",
+          "kind": "require-call",
+          "external": true
+        }
+      ],
+      "exports": [],
+      "entryPoint": "src/film.jsx",
+      "inputs": {
+        "src/film.jsx": {
+          "bytesInOutput": 2410
+        },
+        "src/presentations.jsx": {
+          "bytesInOutput": 275
+        },
+        "src/FilmVisual.jsx": {
+          "bytesInOutput": 17698
+        },
+        "assets/fallback/primitives.jsx": {
+          "bytesInOutput": 744
+        }
+      },
+      "bytes": 22780
+    }
+  }
+}

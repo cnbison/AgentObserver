@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.build/
+# 中间产物：可由 scripts/mix_audio.py / make-music.py 重新生成
+assets/music-src/build/
+assets/music-ducked.wav
+assets/sfx-stem.wav

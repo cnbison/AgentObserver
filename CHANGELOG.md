@@ -6,6 +6,45 @@
 
 ---
 
+### 2026-09-19 · 新增 GOSIM Agent Observer 50s 宣传片工程（videos/）
+
+- 用 `guizang-product-video-skill` 把 `articles/agent-observer-promo-03-修正.md` 做成 50 秒宣传片，落到 `videos/agent-observer-promo/`
+  - **风格**：default（暖白/炭黑，用户 2026-09-19 确认），1920×1080 / 30 fps / 中文
+  - **结构**：9 镜头（intro 封面 + 7 个信息镜头 + CTA），每镜 4–7 秒，总时长 50.000s
+  - **视觉**：9 个 React 组件（HeroIntro / CoreLoop / DecisionBadge / PrizeBoard / AudienceList / Requirements / Schedule / StartSteps / CTA），全部接入 plan.json 的 `shot.component` 路由
+  - **声音**：代码原创 BGM（120 BPM / 50s，Python `assets/music-src/make-music.py` 生成）+ 4 类动作音效（whoosh / click / pop / ding-dong），混音脚本输出 24-bit master.wav 并做 music ducking
+  - **关键约束**：所有数字、日期、奖金、CTA 链接来自 articles/agent-observer-promo-03-修正.md 对应行号（plan.json 的 `source` 字段），与 CLAUDE.md §3.4「不要臆造数据」一致
+  - **验收**：`scripts/check_delivery.py` 跑通，`errors: []`、`ok: true`，仅 3 项可接受 review warning（shot5 阅读速度 + 标准听感）
+  - **交付**：`renders/final.mp4`（H.264+AAC / 1920×1080 / 50.000s / 2.4MB）
+- 工程根加 `.gitignore`：`node_modules/`（37M）+ `dist/`（79M）+ `assets/music-src/build/` + `assets/music-ducked.wav` + `assets/sfx-stem.wav`——均为可重新生成的构建/混音中间产物
+- **保留入库**：源码（src/ + plan.json + BRIEF.md + scripts/）、最终音频（assets/master.wav / music.wav / sfx/）、3 张实景图（public/images/）、最终 MP4 + 关键静帧（renders/ + renders/evidence/）、文档（LICENSE / NOTICE.md / evidence/）
+- 总入库体积 28.9MB（不含 .gitignore 屏蔽项）
+- **不在视频里的素材**：assets/agent-observer/ 下还有 5 张其他图与 1 段主视觉视频（survey-night-sky.mp4），本片按 BRIEF 选用 3 张图；其余资产保留原位不动（CLAUDE.md §3.4「不要修改 assets/agent-observer/ 中的文件名」）
+
+**Commit**: pending
+
+### 2026-09-19 · 新增 Guide/OperatingGuide.md（md 转公众号速查）
+
+- 新增 `Guide/OperatingGuide.md`（334 字节）
+  - 用户手写的内部速查卡：「md 文件 → 公众号格式」的两条路径
+  - 路径 A：`gzh-design` skill（主题库 + 排版 + 校验）
+  - 路径 B：`tools/md2wechat` CLI（`python3 -m md2wechat -i ... -o ... -t marketing`）
+  - 给出的命令示例直接以 `articles/agent-observer-promo-03-修正.md` 为输入，便于团队成员复用
+- 单独建 `Guide/` 目录而非塞进 `marketing/`，因为这是工作流速查而非营销内容
+
+**Commit**: pending
+
+### 2026-09-19 · 新增 promo-03-修正.md 公众号排版 HTML
+
+- 用 `gzh-design` 技能（红白色系主题）把 `articles/agent-observer-promo-03-修正.md` 排版成公众号 HTML
+  - `articles/agent-observer-promo-03-修正_排版_红白色系(red-white).html`（58KB）—— 主交付，校验脚本 `validate_gzh_html.py` 通过
+  - `articles/agent-observer-promo-03-修正_排版_红白色系(red-white)_预览.html`（61KB）—— `wrap_preview.py` 加的预览外壳（含「复制到公众号」按钮；按钮在 section 外，粘到公众号的仍是干净合规正文）
+- 用 `tools/md2wechat` CLI（marketing 主题）补一份
+  - `articles/agent-observer-promo-03-修正-m2w-2.html`（27KB）——marketing 主题变体，记录在 `Guide/OperatingGuide.md` 作为示例命令的输出
+- 未提交：`articles/agent-observer-promo-03-修正-m2w.html` 与 `-m2w-1.html`（sci-tech / science-popular 主题变体，本次仅供挑选主题、未采用）+ `.pdf`（1.7MB，单文件偏大且可由 markdown 重新导出）
+
+**Commit**: pending
+
 ### 2026-09-19 · 回填两条 2026-09-19 记录的 commit 哈希
 
 - 上一条 amend commit 后哈希从 `246b3c2` 变为 `b66a8c2`，把当日两条记录的 `**Commit**` 字段同步更正
