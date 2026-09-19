@@ -462,20 +462,11 @@ Agent Observer 想探索的，并不只是“AI 能不能做天文”。
 
 ### 立即开始
 
-**报名入口：**  
-<https://bh3gei.github.io/agent-observer/register>
+**GOSIM Agent Observer · 巡天智能体黑客松 2026 官网及报名入口：**  
+<https://create.gosim.org/survey26/>
 
-**比赛平台：**  
-<https://bh3gei.github.io/agent-observer/>
-
-**入门工具包：**  
-<https://bh3gei.github.io/agent-observer/resources>
-
-**比赛规则：**  
-<https://bh3gei.github.io/agent-observer/rules>
-
-**联系方式：**  
-<hackathon@gosim.org>
+****GOSIM Shenzhen 2026 官网：**  
+<https://shenzhen2026.gosim.org/>
 
 ---
 
