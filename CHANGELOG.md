@@ -25,7 +25,7 @@
 - 修订 `articles/agent-observer-promo-03-修正.md`（1 行）—— 标题末尾追加「，5,500 美元奖金池等你来战！」与 promo-04/05 保持口径一致
 - **用户决策**：明确以 promo-05-整合 为对外主推文；promo-01~04 保留作为不同切入角度的备稿（短版 / 修正版 / 克制版 / 紧凑版）
 
-**Commit**: pending
+**Commit**: a01f066
 
 ### 2026-09-19 · 新增 GOSIM Agent Observer 50s 宣传片工程（videos/）
 
