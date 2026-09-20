@@ -6,6 +6,27 @@
 
 ---
 
+### 2026-09-20 · 新增 promo-04 + promo-05 整合版 + 修订 promo-03 标题
+
+- 新增 `articles/agent-observer-promo-04.md`（3,262 字 / 112 行 / 紧凑版）
+  - 走"短快狠"路线：直接抛「每 900 秒一次决策」+「5,500 美元奖金池」开场
+  - 结构 6 章 + `∞ · 10 月，深圳见` 收尾，嵌入**官方二维码**（`../assets/agent-observer/qr-survey26-official.png`）引导扫码
+  - 给出**具体基线分数 12,287**，让"20 分钟跑出第一个成绩"这一步有数字锚点
+  - 报名/培训/比赛/颁奖 4 段时间线表格化，方便读者扫读
+- 新增 `articles/agent-observer-promo-05-整合.md`（4,432 字 / 163 行 / 整合版 = 当前对外主推文）
+  - 整合 promo-01~04 的**最强卖点**：
+    - L1 标题同步 promo-03 的「5,500 美元奖金池等你来战！」
+    - L3 沿用 promo-04 的「下一个 900 秒，你的智能体看向哪里？」钩子
+    - 01 章沿用 promo-02 的「读状态 → 理解 → 决策 → 再次决策」连续决策叙述
+    - 03 章沿用 promo-04 的「无需天文背景 / 全球开放 / 1–8 人 / 12,287 基线」具体数字
+  - 末尾 11 章用「把镜头指向下一个 900 秒」+ 「把夜空的下一步，交给你写的智能体」双 CTA 收束
+- 新增 `articles/agent-observer-promo-05-整合.pdf`（1.6MB）—— promo-05 的可打印版
+- 新增 `references/科学委员会资料.pdf`（696KB）—— 主办方提供的官方科学委员会背景资料，作为引用源（CLAUDE.md §1 数据来源扩展）
+- 修订 `articles/agent-observer-promo-03-修正.md`（1 行）—— 标题末尾追加「，5,500 美元奖金池等你来战！」与 promo-04/05 保持口径一致
+- **用户决策**：明确以 promo-05-整合 为对外主推文；promo-01~04 保留作为不同切入角度的备稿（短版 / 修正版 / 克制版 / 紧凑版）
+
+**Commit**: pending
+
 ### 2026-09-19 · 新增 GOSIM Agent Observer 50s 宣传片工程（videos/）
 
 - 用 `guizang-product-video-skill` 把 `articles/agent-observer-promo-03-修正.md` 做成 50 秒宣传片，落到 `videos/agent-observer-promo/`
