@@ -36,7 +36,7 @@
   - 清理两处多余空行
 - 修订 `Guide/OperatingGuide.md`（末尾追加 1 行空行）
 
-**Commit**: pending
+**Commit**: ed2cd4a
 
 ### 2026-09-20 · 新增 promo-04 + promo-05 整合版 + 修订 promo-03 标题
 
