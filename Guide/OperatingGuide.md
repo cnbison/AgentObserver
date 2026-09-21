@@ -10,3 +10,4 @@ python3 -m md2wechat \
     -i ../../articles/agent-observer-promo-03-修正.md \
     -o ../../articles/agent-observer-promo-03-修正-m2w-2.html \
     -t marketing
+

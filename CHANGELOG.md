@@ -6,6 +6,38 @@
 
 ---
 
+### 2026-09-21 · 新增正式稿推广文 + 摸鱼绿排版 + QR 二维码 + 05-整合修订
+
+- 新增 `articles/agent-observer-promo-正式稿.md`（11.5KB / 182 行）
+  - **当前对外主推文**——吸收吴老师四轮修订意见后的整合版（详见 `marketing/Revision_Comments_and_Records.md`）
+  - **结构**：标题 + 钩子引言 + 配图 + 2 段开场 + 关键信息块（6 项 bullet）+ 9 章正文（比赛/AI/任务/特别之处/受众/福利/赛程/上手/CTA）+ 收尾引言
+  - **关键修订**：
+    - 报名队伍规模由 1–8 改为 **1–3 人**
+    - 获奖队伍明确为 **前三名**受邀去深圳颁奖
+    - 加 **天文学 + 智能体双领域专家**训练营作为福利
+    - 加 **开源模型 Token 支持**作为赞助福利（细节待最后确认，模糊写入）
+    - 「点击文末阅读原文」CTA 直接嵌入开头钩子段
+- 新增 `articles/agent-observer-promo-正式稿_排版_摸鱼绿(moyu-green).html`（46KB）
+  - 用 `gzh-design` skill 摸鱼绿主题严格 1:1 渲染正式稿.md
+  - **完全按 md 来**：零内容增删、零智能加工、不加封面/目录/三连/签名等 md 没有的结构
+  - **校验**：`validate_gzh_html.py` 0 ERROR，1 WARNING（7 处正文半角引号源自 md 原文，按"完全按 md 来"要求保留）
+- 新增 `articles/agent-observer-promo-正式稿_排版_摸鱼绿(moyu-green)_预览.html`（49KB）
+  - `wrap_preview.py` 加的预览外壳，含「复制到公众号」按钮
+- 新增 `articles/agent-observer-promo-正式稿.pdf`（2MB）—— 正式稿可打印版
+- 新增 `assets/agent-observer/qr-survey26-official.png`（6.4KB）
+  - 正式稿 L168 / promo-04 L106 早已引用的官网二维码图，本次补入库
+  - 补图后原 placeholder alt 文案可正常显示
+- 新增 `marketing/Revision_Comments_and_Records.md`（2KB）
+  - 汇总吴老师对 agent-observer-promo 系列的四轮修订意见
+  - **未做的事**：科学委员会专家背书名单仍待提供；推广平台账号（公众号 / 小红书 / CSDN）由用户自有发布，本仓库只准备文案与排版产物
+- 修订 `articles/agent-observer-promo-05-整合.md`（8 处）
+  - 删除「这场比赛是 GOSIM Shenzhen 2026...」整段冗余背景——吴老师要求"大幅简化详情、官网吊胃口"
+  - 同步：队伍规模 1–8 → 1–3；获奖队伍 → 获奖队伍前三名
+  - 清理两处多余空行
+- 修订 `Guide/OperatingGuide.md`（末尾追加 1 行空行）
+
+**Commit**: pending
+
 ### 2026-09-20 · 新增 promo-04 + promo-05 整合版 + 修订 promo-03 标题
 
 - 新增 `articles/agent-observer-promo-04.md`（3,262 字 / 112 行 / 紧凑版）
