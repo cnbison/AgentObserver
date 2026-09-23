@@ -34,9 +34,9 @@ def choose_action(candidates, snapshot, memory):
 
     # --- Example ideas (uncomment / edit): ---------------------------------------------------------
     # 1. Never let a REQUIRED tile slip: prefer them whenever one is available.
-    # required = [c for c in candidates if c["scheduling_class"] == "REQUIRED"]
-    # if required:
-    #     return required[0]
+    required = [c for c in candidates if c["scheduling_class"] == "REQUIRED"]
+    if required:
+        return required[0]
     #
     # 2. Serve observation requests first (they pay 140 per tile and cost 190 when missed).
     # for c in candidates:
@@ -50,3 +50,4 @@ def choose_action(candidates, snapshot, memory):
     # 4. Remember what you did: memory.setdefault("observed", []).append(candidates[0]["tile_id"])
 
     return candidates[0]  # default: the highest estimated gain per second
+

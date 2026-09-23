@@ -37,7 +37,7 @@ from pathlib import Path
 # filled in by the kit build (web/scripts/build-kit.mjs); override with SAC_URL / SAC_KEY / SAC_SITE_URL or the flags
 DEFAULT_URL = "https://vdiemcofukuxglqsmlyz.supabase.co"
 DEFAULT_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZkaWVtY29mdWt1eGdscXNtbHl6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODg5NTU3OTcsImV4cCI6MjEwNDUzMTc5N30.qMbZ_C3iKq70SdGDYQPPUD0LMBst-xBspZ-zj_gn75w"
-DEFAULT_SITE_URL = "https://bh3gei.github.io/agent-observer"
+DEFAULT_SITE_URL = "https://create.gosim.org/survey26/platform"
 
 class Api:
     def __init__(self, url: str, key: str):
