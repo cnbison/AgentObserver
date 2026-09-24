@@ -1,4 +1,0 @@
-此目录由 ``tools/md2wechat`` 的 ``--batch`` 模式默认输出位置。
-
-``.gitkeep`` 占位以避免空目录被 git 忽略；
-具体生成的 ``*.wechat.html`` 会被 ``--batch`` 自动写入并应在使用方本地管理。
